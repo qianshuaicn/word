@@ -1,3 +1,10 @@
+/* 全局一点小优化 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,15 +14,17 @@ body, html {
     background: #050818;
 }
 
+/* 背景区域 */
 .gradient-bg {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 10px 18px 14px;
-    background: linear-gradient(to bottom, #081730, #052850);
+    background: radial-gradient(circle at top, #0b2a5a 0, #050818 40%, #02040a 100%);
     box-sizing: border-box;
 }
 
+/* 顶部区域 */
 .top {
     margin-bottom: 10px;
 }
@@ -32,15 +41,17 @@ body, html {
     color: #b4cdff;
 }
 
+/* 卡片主体 */
 .card {
     flex: 1;
     margin: 10px 0;
     padding: 35px 60px;
     border-radius: 24px;
-    background: rgba(10, 35, 70, 0.9);
-    box-shadow: 0 0 20px rgba(0,0,0,0.35);
+    background: rgba(10, 35, 70, 0.92);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.45);
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(6px);
 }
 
 .tip {
@@ -58,57 +69,159 @@ body, html {
     justify-content: center;
 }
 
+/* ============================ */
+/*      答案输入框（放大50%）   */
+/* ============================ */
 #answer {
-    width: 60%;
-    max-width: 700px;
-    font-size: 60px;
+    width: 90%;               /* 原来 60%，现在放大 */
+    max-width: 900px;         /* 原 700 -> 更大 */
+    font-size: 90px;          /* 原 60px → 放大 1.5 倍 */
     font-weight: 700;
     text-align: center;
-    padding: 10px 20px;
+    padding: 16px 28px;       /* 内边距也加大 */
     color: #ebf5ff;
     background: #0f2850;
-    border-radius: 16px;
-    border: 2px solid #5a87d2;
+    border-radius: 20px;
+    border: 3px solid #5a87d2;
     outline: none;
 }
 
 #answer:focus {
     border-color: #73b4ff;
-    box-shadow: 0 0 10px rgba(115,180,255,0.6);
+    box-shadow: 0 0 14px rgba(115, 180, 255, 0.6);
 }
 
+/* 反馈文字 */
 .feedback {
     margin-top: 30px;
     font-size: 40px;
     text-align: center;
 }
 
+/* ============================================= */
+/*         底部按钮区域：两排三列（固定）         */
+/* ============================================= */
 .bottom-bar {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 18px 10px 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 永远三列排列 */
+    gap: 18px;
+    padding: 20px 6px 6px;
 }
 
 .bottom-bar button {
-    padding: 12px 20px;
-    min-width: 180px;
-    font-size: 20px;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 22px;
     font-weight: 600;
-    border-radius: 24px;
+    border-radius: 22px;
     border: none;
     cursor: pointer;
     color: #e6f0ff;
-    background: #2859a0;
+    background: linear-gradient(135deg, #2859a0, #3f7ad2);
     transition: all .15s ease;
 }
 
 .bottom-bar button:hover {
-    background: #468be0;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #468be0, #5a9cf0);
+    transform: translateY(-2px);
 }
 
 .bottom-bar button:active {
     background: #1b4278;
     transform: translateY(1px);
+}
+
+/* ========================================= */
+/*             响应式部分                     */
+/* ========================================= */
+
+/* 平板（<= 992px） */
+@media (max-width: 992px) {
+
+    .card {
+        padding: 28px 32px;
+    }
+
+    #answer {
+        width: 95%;
+        font-size: 68px;
+    }
+
+    .feedback {
+        font-size: 32px;
+        margin-top: 24px;
+    }
+
+    .tip {
+        font-size: 20px;
+    }
+
+    .bottom-bar button {
+        font-size: 18px;
+        padding: 14px 0;
+    }
+}
+
+/* 手机竖屏（<= 600px） */
+@media (max-width: 600px) {
+
+    .gradient-bg {
+        padding: 8px 10px 12px;
+    }
+
+    .card {
+        margin: 6px 0;
+        padding: 20px 16px;
+        border-radius: 18px;
+    }
+
+    #waveCanvas {
+        height: 80px;
+    }
+
+    .status-label {
+        font-size: 14px;
+        padding: 2px 6px 4px;
+    }
+
+    #answer {
+        width: 100%;
+        font-size: 38px;     /* 移动端自动缩小到合适大小 */
+        padding: 10px 14px;
+        border-radius: 14px;
+    }
+
+    .feedback {
+        font-size: 24px;
+        margin-top: 18px;
+    }
+
+    /* 按钮更适合窄屏 */
+    .bottom-bar {
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    .bottom-bar button {
+        font-size: 16px;
+        padding: 12px 0;
+        border-radius: 18px;
+    }
+}
+
+/* 超小屏（<= 380px） */
+@media (max-width: 380px) {
+
+    #answer {
+        font-size: 28px;
+    }
+
+    .feedback {
+        font-size: 20px;
+    }
+
+    .bottom-bar button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
 }

@@ -2,36 +2,51 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>余音单词 Echo Vocabulary（网页版）</title>
+
+    <!-- 样式文件 -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div id="app" class="gradient-bg">
+
+    <!-- 顶部区域：波形条 + 状态栏 -->
     <div class="top">
         <canvas id="waveCanvas"></canvas>
         <div id="status" class="status-label">
-            本轮：0 / 0    全部：0 / 0
+            本轮：0 / 0　全部：0 / 0
         </div>
     </div>
 
+    <!-- 中央卡片区域 -->
     <div class="card">
         <div class="tip">请输入你听到的单词：</div>
+
         <div class="center">
             <input id="answer" type="text" autocomplete="off" />
             <div id="feedback" class="feedback">&nbsp;</div>
         </div>
     </div>
 
+    <!-- 底部按钮：两排三列布局 -->
     <div class="bottom-bar">
+
+        <!-- 第一排 -->
         <button id="brandBtn">余音单词官网</button>
         <button id="playBtn">播放</button>
         <button id="ldoceBtn">朗文查词</button>
+
+        <!-- 第二排 -->
         <button id="youdaoBtn">有道查词</button>
         <button id="bingImgBtn">必应查图</button>
         <button id="resetBtn">重置进度</button>
+
     </div>
 </div>
 
+<!-- 主程序逻辑 -->
 <script src="app.js"></script>
+
 </body>
 </html>
