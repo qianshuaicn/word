@@ -1,12 +1,15 @@
 /* =========================================================
  * Echo Vocabulary Web Version - app.js (最新版)
- * 
+ *
  * 更新内容：
- * - 波形动画速度降低为原来的 1/20
- * - 朗文查词修复（支持手机/PC）
- * - 所有功能完整：账号系统 / 音频 / TTS / 间隔复习
+ * - 顶部波形动画速度降低为原来的 1/20
+ * - “朗文查词”按钮改为柯林斯在线词典（Collins）
+ *   URL 形式：
+ *   https://www.collinsdictionary.com/zh/dictionary/english/{word}
+ * - 其它逻辑保持不变：
+ *   用户账号系统 / 本地存储进度 / 音频 + TTS / 间隔复习 / 其它词典按钮等
  * =========================================================
-*/
+ */
 
 // ====================== 全局状态 ======================
 
@@ -43,8 +46,9 @@ let waveOffset = 0;
 // ====================== 工具函数 ======================
 
 // 文字提示（底部中间）
-function showTempMessage(text, type="info", duration=2000) {
+function showTempMessage(text, type = "info", duration = 2000) {
     const msg = document.getElementById("messageBox");
+    if (!msg) return;
     msg.textContent = text;
     msg.className = "msg-" + type;
     msg.style.opacity = 1;
@@ -54,12 +58,10 @@ function showTempMessage(text, type="info", duration=2000) {
     }, duration);
 }
 
-
 // 随机整数
 function randInt(a, b) {
     return Math.floor(Math.random() * (b - a + 1)) + a;
 }
-
 
 // 用于 localStorage：每个用户独立 key
 function storageKey(name) {
@@ -73,7 +75,10 @@ async function loadWords() {
     const response = await fetch("data/ordered-words.txt");
     const text = await response.text();
 
-    const lines = text.split("\n").map(l => l.trim()).filter(l => l);
+    const lines = text
+        .split("\n")
+        .map(l => l.trim())
+        .filter(l => l);
 
     allWords = lines.map((line, idx) => {
         const sharp = line.indexOf("#");
@@ -100,17 +105,19 @@ async function loadWords() {
 async function loginUser() {
     let user = prompt("请输入您的姓名（作为账号）：");
     if (!user) return;
-
     currentUser = user.trim();
 
     await loadWords();
+    initSession();
 
-    initSession(); // 初始化本轮
+    const loginBox = document.getElementById("loginBox");
+    const mainBox = document.getElementById("mainBox");
+    if (loginBox && mainBox) {
+        loginBox.style.display = "none";
+        mainBox.style.display = "flex";
+    }
 
-    document.getElementById("loginBox").style.display = "none";
-    document.getElementById("mainBox").style.display = "block";
-
-    renderWave(); // 开始动画
+    startWaveAnimation();
 }
 
 
@@ -120,7 +127,9 @@ function initSession() {
     let savedStart = localStorage.getItem(storageKey("progressIndex"));
     let defaultStart = savedStart ? parseInt(savedStart) : 1;
 
-    let startIndexStr = prompt(`请输入起始序号（1 ~ ${allWords.length}），上次为 ${defaultStart}`);
+    let startIndexStr = prompt(
+        `请输入起始序号（1 ~ ${allWords.length}），上次为 ${defaultStart}`
+    );
     let startIndex = parseInt(startIndexStr);
     if (isNaN(startIndex) || startIndex < 1 || startIndex > allWords.length) {
         startIndex = defaultStart;
@@ -148,12 +157,24 @@ function loadWord() {
 
     currentWord = sessionWords[currentIndex];
 
-    document.getElementById("statusBar").textContent =
-        `本轮：${currentIndex + 1}/${sessionWords.length} | 全部：${currentWord.globalIndex}/${allWords.length}`;
+    const statusBar = document.getElementById("statusBar");
+    if (statusBar) {
+        statusBar.textContent =
+            `本轮：${currentIndex + 1}/${sessionWords.length} | ` +
+            `全部：${currentWord.globalIndex}/${allWords.length}`;
+    }
 
-    document.getElementById("answerInput").value = "";
-    document.getElementById("answerInput").focus();
-    document.getElementById("feedback").textContent = "";
+    const answerInput = document.getElementById("answerInput");
+    if (answerInput) {
+        answerInput.value = "";
+        answerInput.focus();
+    }
+
+    const feedback = document.getElementById("feedback");
+    if (feedback) {
+        feedback.textContent = "";
+        feedback.style.color = "#dce6ff";
+    }
 
     playPronunciation(currentWord.lower, 1);
 }
@@ -161,20 +182,25 @@ function loadWord() {
 
 // ====================== 答题逻辑 ======================
 
-let mustCorrect = false;
-let readyNext = false;
+let mustCorrect = false; // 是否必须先把当前单词改正
+let readyNext = false;   // 是否可以进入下一题
 
 function submitAnswer() {
-    const userInput = document.getElementById("answerInput").value.trim();
+    const answerInput = document.getElementById("answerInput");
+    const feedback = document.getElementById("feedback");
+    if (!answerInput || !feedback) return;
+
+    const userInput = answerInput.value.trim();
 
     if (!userInput) {
-        document.getElementById("feedback").textContent = "请输入答案";
+        feedback.textContent = "请输入答案";
+        feedback.style.color = "#dce6ff";
         return;
     }
 
     if (userInput.toLowerCase() === currentWord.lower) {
-        document.getElementById("feedback").style.color = "#3fe8a0";
-        document.getElementById("feedback").textContent =
+        feedback.style.color = "#3fe8a0";
+        feedback.textContent =
             `Perfect! ${currentWord.english} — ${currentWord.chinese}`;
 
         if (!mustCorrect) correctCount++;
@@ -182,8 +208,8 @@ function submitAnswer() {
         mustCorrect = false;
         readyNext = true;
     } else {
-        document.getElementById("feedback").style.color = "#ff7070";
-        document.getElementById("feedback").textContent =
+        feedback.style.color = "#ff7070";
+        feedback.textContent =
             `Oops！正确答案：${currentWord.english}（${currentWord.chinese}）`;
 
         if (!mustCorrect) {
@@ -217,11 +243,13 @@ function nextWord() {
         return;
     }
 
+    // 更新全局进度（下一次建议从当前单词的 globalIndex + 1 开始）
+    localStorage.setItem(
+        storageKey("progressIndex"),
+        currentWord.globalIndex + 1
+    );
+
     currentIndex++;
-
-    // 更新全局进度
-    localStorage.setItem(storageKey("progressIndex"), currentWord.globalIndex + 1);
-
     loadWord();
 }
 
@@ -229,12 +257,17 @@ function nextWord() {
 // ====================== 完成本轮 ======================
 
 function finishSession() {
+    const total = sessionWords.length || 1;
+    const rate = (correctCount * 100.0) / total;
+
     alert(
         `本轮结束！\n` +
         `总题数：${sessionWords.length}\n` +
         `第一次答对：${correctCount}\n` +
-        `正确率：${(correctCount / sessionWords.length * 100).toFixed(2)}%`
+        `正确率：${rate.toFixed(2)}%`
     );
+
+    // 简单做法：重新载入页面
     location.reload();
 }
 
@@ -255,18 +288,23 @@ function playPronunciation(wordLower, times = 1) {
 
 function startAudioWithFallback(src, wordLower) {
     audioElem = new Audio(src);
+
     audioElem.onended = () => {
         if (remainingRepeats > 0 && lastAudioSrc) {
             remainingRepeats--;
             startAudioWithFallback(lastAudioSrc, wordLower);
         }
     };
+
     audioElem.onerror = () => {
         useTtsOrShowError(wordLower, src);
     };
-    audioElem.play().catch(() => {
-        useTtsOrShowError(wordLower, src);
-    });
+
+    audioElem
+        .play()
+        .catch(() => {
+            useTtsOrShowError(wordLower, src);
+        });
 }
 
 function stopAudio() {
@@ -276,15 +314,17 @@ function stopAudio() {
         try {
             audioElem.pause();
             audioElem.currentTime = 0;
-        } catch (e) {}
+        } catch (e) { }
         audioElem = null;
     }
 }
+
 
 // ====================== TTS 回退 ======================
 
 function useTtsOrShowError(wordLower, audioName) {
     const fb = document.getElementById("feedback");
+
     if (!("speechSynthesis" in window)) {
         if (fb) {
             fb.style.color = "#dce6ff";
@@ -304,7 +344,8 @@ function useTtsOrShowError(wordLower, audioName) {
     if (fb) {
         fb.style.color = "#dce6ff";
         if (audioName) {
-            fb.textContent = `音频播放失败（${audioName}），改用 TTS 发音：${wordLower}`;
+            fb.textContent =
+                `音频播放失败（${audioName}），改用 TTS 发音：${wordLower}`;
         } else {
             fb.textContent = `找不到音频，已使用 TTS 发音：${wordLower}`;
         }
@@ -322,21 +363,23 @@ function openInNewTabOrSelf(url) {
     } catch (e) {
         win = null;
     }
+    // 如果被拦截，就用当前页面跳转
     if (!win) {
-        // 被拦截，就用当前页面跳转
         window.location.href = url;
     }
 }
 
-// ✅ 朗文 LDOCE（新版：/dictionary/{word}）
+// ✅ 柯林斯 Collins（替代原来的朗文）
 function openLdoce(word) {
+    // 函数名保留 openLdoce，不影响你现有 HTML / 绑定，只是内部改为柯林斯
     if (!word) {
-        showTempMessage("当前没有单词可以查朗文词典", "info");
+        showTempMessage("当前没有单词可以查词典", "info");
         return;
     }
     const lower = word.trim().toLowerCase();
     const encoded = encodeURIComponent(lower);
-    const url = `https://www.ldoceonline.com/dictionary/${encoded}`;
+    // 使用你提供的中文界面路径：/zh/dictionary/english/{word}
+    const url = `https://www.collinsdictionary.com/zh/dictionary/english/${encoded}`;
     openInNewTabOrSelf(url);
 }
 
@@ -405,7 +448,11 @@ function startWaveAnimation() {
         let tt = t;
 
         while (x < w) {
-            let v = 0.5 * (Math.sin(tt) + Math.sin(tt * 0.7) + Math.sin(tt * 1.3));
+            let v =
+                0.5 *
+                (Math.sin(tt) +
+                    Math.sin(tt * 0.7) +
+                    Math.sin(tt * 1.3));
             v = Math.abs(v);
             const barHeight = v * (h - 25);
             const y = h / 2 - barHeight / 2;
@@ -420,17 +467,23 @@ function startWaveAnimation() {
             ctx.moveTo(x, y + r);
             ctx.arcTo(x, y, x + barWidth, y, r);
             ctx.arcTo(x + barWidth, y, x + barWidth, y + barHeight, r);
-            ctx.arcTo(x + barWidth, y + barHeight, x, y + barHeight, r);
+            ctx.arcTo(
+                x + barWidth,
+                y + barHeight,
+                x,
+                y + barHeight,
+                r
+            );
             ctx.arcTo(x, y + barHeight, x, y, r);
             ctx.closePath();
             ctx.fill();
 
             x += barWidth + gap;
-            // 🔽 这里把速度降低为原来的 1/20
+            // 速度降低为原来的 1/20
             tt += 0.28 / 20;
         }
 
-        t += 0.05 / 20; // 🔽 整体相位速度也降低为 1/20
+        t += 0.05 / 20;
 
         requestAnimationFrame(draw);
     }
@@ -441,30 +494,9 @@ function startWaveAnimation() {
 
 // ====================== 事件绑定 & 启动入口 ======================
 
-// 重新定义 loginUser（覆盖前面版本，加上空节点保护 + 启动波形）
-async function loginUser() {
-    let user = prompt("请输入您的姓名（作为账号）：");
-    if (!user) return;
-    currentUser = user.trim();
-
-    await loadWords();
-    initSession();
-
-    // 如果页面里有 loginBox/mainBox，就控制显示；没有就忽略
-    const loginBox = document.getElementById("loginBox");
-    const mainBox  = document.getElementById("mainBox");
-    if (loginBox && mainBox) {
-        loginBox.style.display = "none";
-        mainBox.style.display  = "flex";
-    }
-
-    startWaveAnimation();
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     feedbackElem = document.getElementById("feedback");
 
-    // 如果你有“登录按钮”（例如 id="loginBtn"），可以点击登录
     const loginBtn = document.getElementById("loginBtn");
     if (loginBtn) {
         loginBtn.addEventListener("click", () => {
@@ -514,9 +546,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (ldoceBtn) {
         ldoceBtn.addEventListener("click", () => {
             if (!currentWord) {
-                showTempMessage("当前没有单词可以查朗文", "info");
+                showTempMessage("当前没有单词可以查词典", "info");
                 return;
             }
+            // 这里调用的是 openLdoce（内部已改为柯林斯）
             openLdoce(currentWord.english);
         });
     }
@@ -525,7 +558,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (youdaoBtn) {
         youdaoBtn.addEventListener("click", () => {
             if (!currentWord) {
-                showTempMessage("当前没有单词可以查有道", "info");
+                showTempMessage("当前没有单词可以查有道词典", "info");
                 return;
             }
             openYoudao(currentWord.english);
@@ -550,7 +583,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 showTempMessage("当前还没有登录用户", "info");
                 return;
             }
-            if (!confirm(`确定要重置账号 ${currentUser} 的学习进度吗？`)) {
+            if (
+                !confirm(
+                    `确定要重置账号 ${currentUser} 的学习进度吗？`
+                )
+            ) {
                 return;
             }
             localStorage.removeItem(storageKey("progressIndex"));
