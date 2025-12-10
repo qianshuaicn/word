@@ -1,0 +1,279 @@
+// app.js
+
+// ----------------- 数据结构 & 状态 -----------------
+class Word {
+    constructor(english, chinese) {
+        this.english = english.trim();
+        this.lower = this.english.toLowerCase();
+        this.chinese = (chinese || "").trim();
+    }
+}
+
+let allWords = [];          // ordered-words.txt 中的全部单词（按原始顺序）
+let words = [];             // 本轮练习列表（尾部 + 错题插入）
+let wordIndexMap = new Map();  // lower → 全局序号 (1-based)
+let totalWordCount = 0;
+
+let currentIndex = 0;
+let correctCount = 0;
+let mustCorrectCurrent = false;
+let readyToGoNext = false;
+
+let lastProgressIndex = 1;  // “下次起始建议位置” 1..N
+
+// 音频相关
+let audioElem = null;
+let remainingRepeats = 0;
+let lastAudioSrc = null;
+
+// DOM 元素
+const statusLabel  = document.getElementById('status');
+const answerInput  = document.getElementById('answer');
+const feedbackElem = document.getElementById('feedback');
+
+const brandBtn   = document.getElementById('brandBtn');
+const playBtn    = document.getElementById('playBtn');
+const ldoceBtn   = document.getElementById('ldoceBtn');
+const youdaoBtn  = document.getElementById('youdaoBtn');
+const bingImgBtn = document.getElementById('bingImgBtn');
+const resetBtn   = document.getElementById('resetBtn');
+
+// ----------------- 初始化流程 -----------------
+window.addEventListener('load', async () => {
+    await loadWords();
+    loadLastProgress();
+    const startIndex = await askUserStartIndex();
+    buildSessionWordsFromStart(startIndex);
+    lastProgressIndex = startIndex;
+    if (words.length === 0) {
+        alert(`从第 ${startIndex} 个单词开始，后面已经没有单词。`);
+        return;
+    }
+    initEvents();
+    updateWordInfo();
+    startWaveAnimation();
+});
+
+// 读取 ordered-words.txt
+async function loadWords() {
+    const resp = await fetch('data/ordered-words.txt');
+    const text = await resp.text();
+    const lines = text.split(/\r?\n/);
+    allWords = [];
+    wordIndexMap.clear();
+
+    let lineNo = 0;
+    for (const raw of lines) {
+        const line = raw.trim();
+        if (!line) continue;
+        let eng = line;
+        let chi = '';
+        const idx = line.indexOf('#');
+        if (idx !== -1) {
+            eng = line.substring(0, idx).trim();
+            chi = line.substring(idx + 1).trim();
+        }
+        if (eng) {
+            lineNo++;
+            const w = new Word(eng, chi);
+            allWords.push(w);
+            if (!wordIndexMap.has(w.lower)) {
+                wordIndexMap.set(w.lower, lineNo);
+            }
+        }
+    }
+    totalWordCount = lineNo;
+    words = [...allWords];  // 先复制一份
+}
+
+// 读取 lastProgressIndex（localStorage）
+function loadLastProgress() {
+    const val = window.localStorage.getItem('echo_vocab_last_progress');
+    if (!val) {
+        lastProgressIndex = 1;
+    } else {
+        const n = parseInt(val, 10);
+        if (isNaN(n) || n < 1 || n > totalWordCount) {
+            lastProgressIndex = 1;
+        } else {
+            lastProgressIndex = n;
+        }
+    }
+}
+
+// 保存 lastProgressIndex
+function saveLastProgress() {
+    let val = lastProgressIndex;
+    if (val < 1) val = 1;
+    if (val > totalWordCount + 1) val = totalWordCount + 1;
+    window.localStorage.setItem('echo_vocab_last_progress', String(val));
+}
+
+// 询问本轮起始序号（用 prompt 简化版）
+async function askUserStartIndex() {
+    const max = totalWordCount;
+    let def = lastProgressIndex;
+    if (def < 1 || def > max) def = 1;
+
+    const msg = [
+        `请输入起始单词序号（1 ~ ${max}）开始本轮听写记单词：`,
+        `序号越小，单词越常用；序号越大，单词越生僻。`,
+        `上次学习进度：第 ${def} 个单词。直接回车表示接着上次进度继续。`
+    ].join('\n');
+
+    let input = window.prompt(msg, String(def));
+    if (input === null) {
+        // 用户取消，就用默认
+        return def;
+    }
+    input = input.trim();
+    if (!input) return def;
+    const n = parseInt(input, 10);
+    if (isNaN(n) || n < 1 || n > max) return def;
+    return n;
+}
+
+// 从 startIndex 开始构造本轮 words
+function buildSessionWordsFromStart(startIndex) {
+    words = allWords.slice(startIndex - 1); // 从 startIndex-1 到末尾
+    currentIndex = 0;
+    correctCount = 0;
+    mustCorrectCurrent = false;
+    readyToGoNext = false;
+}
+
+// ----------------- 事件绑定 -----------------
+function initEvents() {
+    // 回车键
+    answerInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            if (readyToGoNext) {
+                goToNextWord();
+            } else {
+                submitAnswer();
+            }
+            e.preventDefault();
+        }
+    });
+
+    playBtn.addEventListener('click', () => {
+        const w = words[currentIndex];
+        if (w) playPronunciation(w.lower, 1);
+    });
+
+    brandBtn.addEventListener('click', () => {
+        openInNewTab('https://www.math1234567.com/category/English');
+    });
+
+    ldoceBtn.addEventListener('click', () => openDict('ldoce'));
+    youdaoBtn.addEventListener('click', () => openDict('youdao'));
+    bingImgBtn.addEventListener('click', () => openDict('bing-img'));
+    resetBtn.addEventListener('click', () => doReset());
+}
+
+// ----------------- 逻辑：显示、提交答案、间隔复习 -----------------
+function getGlobalIndex(word) {
+    if (!word) return -1;
+    return wordIndexMap.get(word.lower) ?? -1;
+}
+
+function updateWordInfo() {
+    if (currentIndex < 0 || currentIndex >= words.length) return;
+
+    mustCorrectCurrent = false;
+    readyToGoNext = false;
+
+    const w = words[currentIndex];
+    const localIndex = currentIndex + 1;
+    const sessionTotal = words.length;
+    const globalIndex = getGlobalIndex(w);
+
+    if (globalIndex > 0) {
+        statusLabel.textContent =
+            `本轮：${localIndex} / ${sessionTotal}    全部：${globalIndex} / ${totalWordCount}`;
+    } else {
+        statusLabel.textContent =
+            `本轮：${localIndex} / ${sessionTotal}    全部：? / ${totalWordCount}`;
+    }
+
+    feedbackElem.textContent = '\u00A0'; // 不空行
+    feedbackElem.style.color = '#dce6ff';
+
+    answerInput.value = '';
+    answerInput.focus();
+
+    playPronunciation(w.lower, 1);
+}
+
+function submitAnswer() {
+    if (currentIndex < 0 || currentIndex >= words.length) return;
+    const userInput = answerInput.value.trim();
+    if (!userInput) {
+        feedbackElem.textContent = '请输入你的答案。';
+        feedbackElem.style.color = '#dce6ff';
+        return;
+    }
+    const current = words[currentIndex];
+    if (userInput.toLowerCase() === current.english.toLowerCase()) {
+        // 正确
+        feedbackElem.style.color = '#78e6aa';
+        feedbackElem.textContent = `Perfect！ ${current.english} —— ${current.chinese}`;
+        if (!mustCorrectCurrent) {
+            correctCount++;
+        }
+        mustCorrectCurrent = false;
+        readyToGoNext = true;
+    } else {
+        // 错误
+        feedbackElem.style.color = '#ff788c';
+        if (!mustCorrectCurrent) {
+            feedbackElem.textContent = `Sorry，是：${current.english}（${current.chinese}），请更正。`;
+            mustCorrectCurrent = true;
+            scheduleExtraReviews(current);
+        } else {
+            feedbackElem.textContent = `Sorry again，是：${current.english}（${current.chinese}），请更正。`;
+        }
+        readyToGoNext = false;
+    }
+}
+
+// 间隔复习插入
+function scheduleExtraReviews(word) {
+    const OFFSETS = [4, 10, 22, 40, 64, 94, 130, 172];
+    let baseIndex = currentIndex;
+
+    for (const offset of OFFSETS) {
+        let targetIndex = baseIndex + offset;
+        if (targetIndex > words.length) {
+            targetIndex = words.length;
+        }
+        words.splice(targetIndex, 0, word);
+    }
+}
+
+// 进入下一题 & 更新全局进度
+function goToNextWord() {
+    if (currentIndex >= 0 && currentIndex < words.length) {
+        const current = words[currentIndex];
+        const gi = getGlobalIndex(current);
+        if (gi > 0) {
+            lastProgressIndex = Math.max(lastProgressIndex, gi + 1);
+            saveLastProgress();
+        }
+    }
+
+    currentIndex++;
+    if (currentIndex >= words.length) {
+        stopAudio();
+        const total = words.length;
+        const rate = total ? (correctCount * 100 / total) : 0;
+        alert(
+            `听写结束！\n` +
+            `本轮总题数：${total}\n` +
+            `第一次就答对的题数：${correctCount}\n` +
+            `正确率：${rate.toFixed(2)}%`
+        );
+        return;
+    }
+    updateWordInfo();
+}

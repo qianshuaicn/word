@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>余音单词 Echo Vocabulary（网页版）</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app" class="gradient-bg">
+    <div class="top">
+        <canvas id="waveCanvas"></canvas>
+        <div id="status" class="status-label">
+            本轮：0 / 0    全部：0 / 0
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="tip">请输入你听到的单词：</div>
+        <div class="center">
+            <input id="answer" type="text" autocomplete="off" />
+            <div id="feedback" class="feedback">&nbsp;</div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <button id="brandBtn">余音单词官网</button>
+        <button id="playBtn">播放</button>
+        <button id="ldoceBtn">朗文查词</button>
+        <button id="youdaoBtn">有道查词</button>
+        <button id="bingImgBtn">必应查图</button>
+        <button id="resetBtn">重置进度</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
