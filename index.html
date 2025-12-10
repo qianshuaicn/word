@@ -45,8 +45,27 @@
     </div>
 </div>
 
+<!-- 自定义弹窗层（默认隐藏） -->
+<div class="popup-backdrop" id="popupBackdrop">
+    <div class="popup-card">
+        <div class="popup-title" id="popupTitle">标题</div>
+        <div class="popup-message" id="popupMessage">描述说明</div>
+
+        <input
+            type="text"
+            id="popupInput"
+            class="popup-input"
+            placeholder="请输入..."
+        />
+
+        <div class="popup-footer">
+            <button class="popup-btn popup-btn-cancel" id="popupCancelBtn">取消</button>
+            <button class="popup-btn popup-btn-ok" id="popupOkBtn">确定</button>
+        </div>
+    </div>
+</div>
+
 <!-- 主程序逻辑 -->
 <script src="app.js"></script>
-
 </body>
 </html>

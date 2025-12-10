@@ -225,3 +225,109 @@ body, html {
         padding: 10px 0;
     }
 }
+
+
+/* ====== 自定义弹窗：半透明遮罩层 ====== */
+.popup-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.popup-backdrop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ====== 中间卡片 ====== */
+.popup-card {
+    width: 90%;
+    max-width: 380px;
+    background: linear-gradient(135deg, #0f2446, #081020);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+    box-sizing: border-box;
+
+    transform: translateY(15px) scale(0.96);
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.popup-backdrop.show .popup-card {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.popup-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #eef3ff;
+    margin-bottom: 8px;
+}
+
+.popup-message {
+    font-size: 14px;
+    color: #b8c9ff;
+    margin-bottom: 14px;
+    line-height: 1.45;
+}
+
+/* 输入框 */
+.popup-input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(5,10,25,0.85);
+    border: 1px solid rgba(120,164,255,0.5);
+    color: #eef3ff;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+.popup-input:focus {
+    border-color: #78a4ff;
+    background: rgba(8,14,40,0.95);
+    box-shadow: 0 0 0 1px rgba(120,164,255,0.6);
+}
+
+/* 底部按钮区域 */
+.popup-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.popup-btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.popup-btn-cancel {
+    background: transparent;
+    color: #9db3ff;
+    border: 1px solid rgba(150,170,255,0.45);
+}
+
+.popup-btn-ok {
+    background: linear-gradient(135deg, #4f9cff, #6bffda);
+    color: #041021;
+}
+
+.popup-btn:active {
+    transform: translateY(1px);
+}

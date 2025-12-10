@@ -1,6 +1,162 @@
 // app.js - Echo Vocabulary Web 版核心逻辑（支持账号、多用户进度）
 
 
+// ================== 0. 自定义弹窗 DOM & 通用函数 ==================
+
+// 注意：index.html 中的弹窗 DOM 必须写在 <script src="app.js"></script> 之前
+const popupBackdrop = document.getElementById('popupBackdrop');
+const popupCard = popupBackdrop ? popupBackdrop.querySelector('.popup-card') : null;
+const popupTitle = document.getElementById('popupTitle');
+const popupMessage = document.getElementById('popupMessage');
+const popupInput = document.getElementById('popupInput');
+const popupOkBtn = document.getElementById('popupOkBtn');
+const popupCancelBtn = document.getElementById('popupCancelBtn');
+
+let dialogResolve = null;
+let popupMode = 'input'; // 'input' | 'confirm' | 'message'
+
+function closePopup() {
+    if (popupBackdrop) {
+        popupBackdrop.classList.remove('show');
+    }
+    dialogResolve = null;
+    popupMode = 'input';
+}
+
+function openPopup(options = {}) {
+    if (!popupBackdrop || !popupTitle || !popupMessage || !popupOkBtn || !popupCancelBtn) {
+        console.error('弹窗 DOM 未找到，请检查 index.html 中的 popup 结构。');
+        // 兜底：如果没有弹窗 DOM，就退回 alert，避免程序死掉
+        window.alert(options.message || '');
+        return Promise.resolve({ confirmed: true, value: null });
+    }
+
+    const {
+        title = '提示',
+        message = '',
+        placeholder = '',
+        defaultValue = '',
+        okText = '确定',
+        cancelText = '取消',
+        mode = 'input'
+    } = options;
+
+    popupMode = mode;
+    popupTitle.textContent = title;
+    popupMessage.textContent = message;
+
+    if (mode === 'input') {
+        popupInput.style.display = 'block';
+        popupInput.disabled = false;
+        popupInput.placeholder = placeholder || '';
+        popupInput.value = defaultValue || '';
+        popupCancelBtn.style.display = 'inline-block';
+        popupOkBtn.textContent = okText;
+        popupCancelBtn.textContent = cancelText;
+    } else {
+        // confirm / message：隐藏输入框
+        popupInput.style.display = 'none';
+        popupInput.disabled = true;
+        popupInput.value = '';
+        popupInput.placeholder = '';
+        popupOkBtn.textContent = okText;
+
+        if (mode === 'confirm') {
+            popupCancelBtn.style.display = 'inline-block';
+            popupCancelBtn.textContent = cancelText;
+        } else {
+            // message：只保留“确定”按钮
+            popupCancelBtn.style.display = 'none';
+        }
+    }
+
+    popupBackdrop.classList.add('show');
+
+    setTimeout(() => {
+        if (mode === 'input') {
+            popupInput.focus();
+        } else {
+            popupOkBtn.focus();
+        }
+    }, 20);
+
+    return new Promise((resolve) => {
+        dialogResolve = resolve;
+    });
+}
+
+function showInputDialog(options = {}) {
+    return openPopup({ ...options, mode: 'input' });
+}
+
+function showConfirmDialog(options = {}) {
+    return openPopup({ ...options, mode: 'confirm' });
+}
+
+function showMessageDialog(options = {}) {
+    return openPopup({ ...options, mode: 'message' });
+}
+
+// OK 按钮
+if (popupOkBtn) {
+    popupOkBtn.addEventListener('click', () => {
+        if (dialogResolve) {
+            if (popupMode === 'input') {
+                dialogResolve({
+                    confirmed: true,
+                    value: (popupInput.value || '').trim()
+                });
+            } else {
+                dialogResolve({
+                    confirmed: true,
+                    value: null
+                });
+            }
+        }
+        closePopup();
+    });
+}
+
+// 取消按钮（仅 input / confirm 有用）
+if (popupCancelBtn) {
+    popupCancelBtn.addEventListener('click', () => {
+        if (dialogResolve) {
+            dialogResolve({
+                confirmed: false,
+                value: null
+            });
+        }
+        closePopup();
+    });
+}
+
+// 点击背景 = 取消
+if (popupBackdrop) {
+    popupBackdrop.addEventListener('click', (e) => {
+        if (e.target === popupBackdrop) {
+            if (dialogResolve) {
+                dialogResolve({
+                    confirmed: false,
+                    value: null
+                });
+            }
+            closePopup();
+        }
+    });
+}
+
+// 输入框键盘事件：Enter = 确定, Esc = 取消
+if (popupInput) {
+    popupInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            popupOkBtn && popupOkBtn.click();
+        } else if (e.key === 'Escape') {
+            popupCancelBtn && popupCancelBtn.click();
+        }
+    });
+}
+
+
 // ================== 1. 数据结构 & 全局变量 ==================
 
 class Word {
@@ -23,7 +179,7 @@ let correctCount = 0;       // 本轮第一次就答对的数量
 let mustCorrectCurrent = false; // 当前单词是否已经答错，需要强制更正
 let readyToGoNext = false;      // 当前单词已经答对，下一次回车可以跳到下一题
 
-// === 新增：当前用户 ID（账号） ===
+// === 当前用户 ID（账号） ===
 let currentUserId = null;       // 每个用户一个 ID，用于区分各自进度
 let lastProgressIndex = 1;      // 当前账号的“下次起始序号”（1..N），保存在 localStorage
 
@@ -138,28 +294,31 @@ function getProgressKey() {
     return 'echo_vocab_last_progress_' + id;
 }
 
-// 询问用户账号（例如姓名拼音、学号等）
-function askUserId() {
-    let id = window.prompt(
-        '欢迎使用余音单词 Echo Vocabulary！\n\n' +
-        '请输入你的账号（例如姓名拼音或学号）：\n' +
-        '同一账号可以多次登录，系统会为你单独保存进度。',
-        ''
-    );
+// 询问用户账号（例如姓名拼音、学号等） —— 使用自定义弹窗
+async function askUserId() {
+    const result = await showInputDialog({
+        title: '欢迎使用余音单词 Echo Vocabulary',
+        message:
+            '请输入你的账号（例如姓名拼音或学号）。\n' +
+            '同一账号可以多次登录，系统会为你单独保存进度。',
+        placeholder: '例如：zhangsan 或 20250101',
+        defaultValue: ''
+    });
 
-    if (id === null) {
-        // 用户点“取消”，默认 guest
+    let id;
+    if (!result.confirmed) {
         id = 'guest';
+    } else {
+        id = (result.value || '').trim();
+        if (!id) id = 'guest';
     }
-    id = id.trim();
-    if (!id) id = 'guest';
     return id;
 }
 
 window.addEventListener('load', async () => {
     try {
         // 1. 先确定当前账号
-        currentUserId = askUserId();
+        currentUserId = await askUserId();
 
         // 2. 初始化 DOM 引用
         initDomRefs();
@@ -177,7 +336,10 @@ window.addEventListener('load', async () => {
         saveLastProgress();
 
         if (words.length === 0) {
-            alert(`从第 ${startIndex} 个单词开始，后面已经没有单词可练习了。`);
+            await showMessageDialog({
+                title: '提示',
+                message: `从第 ${startIndex} 个单词开始，后面已经没有单词可练习了。`
+            });
             return;
         }
 
@@ -187,7 +349,10 @@ window.addEventListener('load', async () => {
         startWaveAnimation();
     } catch (e) {
         console.error(e);
-        alert('初始化程序时发生错误：' + e.message);
+        await showMessageDialog({
+            title: '错误',
+            message: '初始化程序时发生错误：' + (e && e.message ? e.message : e)
+        });
     }
 });
 
@@ -274,7 +439,7 @@ function saveLastProgress() {
     window.localStorage.setItem(key, String(val));
 }
 
-// 询问用户本轮起始序号（用 prompt 简化版）
+// 询问用户本轮起始序号（用自定义弹窗）
 async function askUserStartIndex() {
     const max = totalWordCount;
     let def = lastProgressIndex;
@@ -285,18 +450,25 @@ async function askUserStartIndex() {
         '',
         `请输入起始单词序号（1 ~ ${max}）开始本轮听写记单词：`,
         `序号越小，单词越常用；序号越大，单词越生僻。`,
-        `上次学习进度：第 ${def} 个单词。直接回车表示接着上次进度继续。`,
+        `上次学习进度：第 ${def} 个单词。若不修改，直接点击「确定」即可接着上次进度继续。`,
         '',
         '软件名称：余音单词 Echo Vocabulary',
         '软件特点：语音先入，真人发音，听写训练，智能复习，自动记录进度。'
     ].join('\n');
 
-    let input = window.prompt(msg, String(def));
-    if (input === null) {
-        // 用户点“取消”，就使用默认
+    const result = await showInputDialog({
+        title: '选择起始单词序号',
+        message: msg,
+        placeholder: `请输入 1 ~ ${max} 的整数`,
+        defaultValue: String(def)
+    });
+
+    if (!result.confirmed) {
+        // 用户点了取消，就用默认
         return def;
     }
-    input = input.trim();
+
+    let input = (result.value || '').trim();
     if (!input) return def;
 
     const n = parseInt(input, 10);
@@ -348,7 +520,10 @@ function initEvents() {
     bingImgBtn.addEventListener('click', () => openDict('bing-img'));
 
     // 重置进度（只重置当前账号）
-    resetBtn.addEventListener('click', () => doReset());
+    resetBtn.addEventListener('click', () => {
+        // doReset 是 async，这里可以不 await
+        doReset();
+    });
 }
 
 
@@ -442,7 +617,7 @@ function scheduleExtraReviews(word) {
     }
 }
 
-// 进入下一题；如果本轮结束，则显示总结
+// 进入下一题；如果本轮结束，则显示总结（用自定义弹窗）
 function goToNextWord() {
     // 更新 当前账号 的 lastProgressIndex：以当前单词的全局序号为基础
     if (currentIndex >= 0 && currentIndex < words.length) {
@@ -460,13 +635,14 @@ function goToNextWord() {
 
         const total = words.length;
         const rate = total ? (correctCount * 100 / total) : 0;
-        alert(
-            `账号：${currentUserId}\n\n` +
-            `听写结束！\n` +
-            `本轮总题数：${total}\n` +
-            `第一次就答对的题数：${correctCount}\n` +
-            `正确率：${rate.toFixed(2)}%`
-        );
+        showMessageDialog({
+            title: '本轮听写结束',
+            message:
+                `账号：${currentUserId}\n\n` +
+                `本轮总题数：${total}\n` +
+                `第一次就答对的题数：${correctCount}\n` +
+                `正确率：${rate.toFixed(2)}%`
+        });
         return;
     }
 
@@ -482,13 +658,19 @@ function openInNewTab(url) {
 
 function openDict(type) {
     if (currentIndex < 0 || currentIndex >= words.length) {
-        alert('当前没有正在练习的单词。');
+        showMessageDialog({
+            title: '提示',
+            message: '当前没有正在练习的单词。'
+        });
         return;
     }
     const w = words[currentIndex];
     const word = w.english.trim();
     if (!word) {
-        alert('无法获取当前单词。');
+        showMessageDialog({
+            title: '提示',
+            message: '无法获取当前单词。'
+        });
         return;
     }
 
@@ -509,13 +691,19 @@ function openDict(type) {
 }
 
 // 清空 当前账号 的进度并从第 1 个单词重新开始
-function doReset() {
-    if (!confirm(
-        `当前账号：${currentUserId}\n\n` +
-        '此操作会清除该账号的所有学习进度，\n' +
-        '包括下次起始序号的记录。\n\n' +
-        '确定要重置到第一次使用的状态吗？'
-    )) {
+async function doReset() {
+    const result = await showConfirmDialog({
+        title: '重置进度确认',
+        message:
+            `当前账号：${currentUserId}\n\n` +
+            '此操作会清除该账号的所有学习进度，\n' +
+            '包括下次起始序号的记录。\n\n' +
+            '确定要重置到第一次使用的状态吗？',
+        okText: '确定重置',
+        cancelText: '取消'
+    });
+
+    if (!result.confirmed) {
         return;
     }
 
@@ -528,7 +716,10 @@ function doReset() {
     saveLastProgress();
     updateWordInfo();
 
-    alert(`账号 ${currentUserId} 的进度已重置，已从第 1 个单词重新开始。`);
+    showMessageDialog({
+        title: '重置完成',
+        message: `账号 ${currentUserId} 的进度已重置，已从第 1 个单词重新开始。`
+    });
 }
 
 
