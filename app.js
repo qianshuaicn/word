@@ -514,7 +514,7 @@ function initEvents() {
         openInNewTab('https://www.math1234567.com/category/English');
     });
 
-    // 朗文 / 有道 / 必应图片
+    // Collins / 有道 / 必应图片
     ldoceBtn.addEventListener('click', () => openDict('ldoce'));
     youdaoBtn.addEventListener('click', () => openDict('youdao'));
     bingImgBtn.addEventListener('click', () => openDict('bing-img'));
@@ -678,7 +678,8 @@ function openDict(type) {
     let url = '';
 
     if (type === 'ldoce') {
-        url = `https://www.ldoceonline.com/search/english/direct/?q=${encoded}`;
+        // ✅ 已替换为 Collins 词典
+        url = `https://www.collinsdictionary.com/zh/dictionary/english/${encoded}`;
     } else if (type === 'youdao') {
         url = `https://youdao.com/result?word=${encoded}&lang=en`;
     } else if (type === 'bing-img') {
