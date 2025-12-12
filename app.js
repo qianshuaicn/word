@@ -511,7 +511,7 @@ function initEvents() {
 
     // 官网
     brandBtn.addEventListener('click', () => {
-        openInNewTab('https://www.math1234567.com/category/English');
+        openInNewTab('https://reward.qianshuaiblog.cn/');
     });
 
     // Collins / 有道 / 必应图片
