@@ -291,6 +291,7 @@ give#给
 car#车
 name#姓名
 game#游戏
+minutes#分钟
 course#课程
 saying#说
 line#线
@@ -734,6 +735,7 @@ agency#机构
 critical#批判的
 include#包括
 effective#有效的
+works#作品
 budget#预算
 answer#回答
 species#物种
@@ -862,6 +864,7 @@ friday#星期五
 seat#座位
 built#建造
 rich#富有的
+remains#遗迹
 plant#植物
 add#添加
 status#地位
@@ -930,6 +933,7 @@ christmas#圣诞节
 justice#正义
 female#女性
 anyway#反正
+funds#资金
 statement#陈述
 coach#教练
 native#本国的
@@ -1229,6 +1233,7 @@ broke#打破
 ought#应该
 bus#公共汽车
 standard#标准
+identified#已识别
 hole#洞
 golf#高尔夫球
 offer#提供
@@ -1499,6 +1504,7 @@ christ#基督
 narrow#狭窄的
 expert#专家
 consistent#持续的
+characteristics#特征
 decide#决定
 teach#教
 curriculum#课程
@@ -1521,6 +1527,7 @@ tea#茶
 temperature#温度
 smart#聪明的
 fruit#水果
+announced#宣布
 childhood#童年
 instruction#操作说明
 supply#供应
@@ -1547,6 +1554,7 @@ universe#宇宙
 council#理事会
 afford#买得起
 mass#大量的
+focused#专注
 ear#耳朵
 steel#钢
 violent#暴力
@@ -1557,6 +1565,7 @@ choose#选择
 guide#指导
 racial#种族
 immediate#即时
+facilities#设施
 wore#穿着
 psychological#心理
 host#主持人
@@ -1758,6 +1767,7 @@ bathroom#浴室
 claim#宣称
 permanent#永恒的
 winner#优胜者
+defined#定义
 rice#米
 touch#触碰
 photograph#照片
@@ -2043,6 +2053,7 @@ entry#入口
 index#指数
 request#要求
 mile#英里
+criteria#标准
 cake#蛋糕
 poetry#诗
 exhibition#展览
@@ -2259,6 +2270,7 @@ handful#少数
 powder#粉末
 elite#精英
 frequent#频繁
+expressed#表达
 awful#可怕
 match#匹配
 examination#考试
@@ -2416,6 +2428,7 @@ suburban#郊区
 escape#逃脱
 hence#因此
 integrity#正直
+genes#基因
 utility#公用事业
 midnight#午夜
 classical#古典
@@ -2526,6 +2539,7 @@ explosion#爆炸
 coal#煤炭
 radiation#辐射
 drunk#醉
+entitled#标题
 weird#诡异的
 stick#戳
 poet#诗人
@@ -2730,6 +2744,7 @@ generous#慷慨的
 define#定义
 civilization#文明
 cry#哭
+drives#驱动
 leaning#倾斜
 casual#随意的
 s#s
@@ -2783,6 +2798,7 @@ replacement#替代品
 assembly#集会
 photographer#摄影师
 canvas#帆布
+declined#拒绝
 earn#赚
 symbolic#象征性的
 pound#磅
@@ -2802,6 +2818,8 @@ silly#愚蠢的
 demonstrate#证明
 strict#严格的
 tightly#紧紧
+provisions#条款
+prospects#前景
 opposed#反对
 uniform#制服
 hurricane#飓风
@@ -2826,6 +2844,7 @@ broadcast#播送
 crop#庄稼
 pen#笔
 enhance#提高
+separated#分开
 purchase#购买
 talented#才华横溢
 shrimp#虾
@@ -2838,6 +2857,7 @@ trick#诡计
 stadium#体育场
 dignity#尊严
 inspiration#灵感
+voting#表决
 dimension#方面
 ghost#鬼
 productivity#生产率
@@ -2891,6 +2911,7 @@ ours#我们的
 gallery#画廊
 optimistic#乐观的
 leaf#叶子
+willingness#意愿
 consequently#最后
 afterward#之后
 trunk#树干
@@ -2993,6 +3014,7 @@ monster#怪物
 waist#腰部
 thumb#拇指
 reception#接待
+impressed#印象深刻
 recording#记录
 extend#延长
 compare#比较
@@ -3073,6 +3095,7 @@ patch#修补
 predict#预测
 skirt#裙子
 relation#关系
+exclusively#只
 painter#画家
 unprecedented#空前的
 correlation#相关性
@@ -3165,6 +3188,7 @@ innovation#创新
 cow#奶牛
 trauma#创伤
 republic#共和国
+symbols#符号
 blow#吹
 confirmed#确认的
 embarrassed#尴尬的
@@ -3268,6 +3292,7 @@ tide#潮
 fantastic#极好的
 aunt#阿姨
 removal#移动
+transformed#转变
 twentieth#第二十
 skull#颅骨
 elaborate#精心制作的
@@ -3276,6 +3301,7 @@ estimate#估计
 modify#调整
 deliberately#故意地
 formerly#以前
+contributing#贡献
 curiosity#好奇心
 adolescent#青少年
 lift#举起
@@ -3352,6 +3378,7 @@ nineteenth#第十九
 fog#多雾路段
 wagon#车皮
 cruise#巡航
+occupied#占领
 monetary#货币
 legislature#立法机关
 electronics#电子学
@@ -3428,6 +3455,7 @@ completion#完成
 intensive#密集的
 burn#烧伤
 positively#积极地
+explicitly#明确地
 rack#架子
 frontier#边境
 exhibit#展览
@@ -3517,6 +3545,7 @@ hazardous#危险
 inability#无力
 disappointment#失望
 climb#爬
+customs#海关
 brave#勇敢的
 colony#殖民地
 therapist#治疗师
@@ -3533,6 +3562,7 @@ prosperity#繁荣
 texture#质地
 acute#急性
 reward#报酬
+statistically#统计学上
 abruptly#突然
 duck#鸭子
 booth#展位
@@ -3570,6 +3600,7 @@ forum#论坛
 tray#托盘
 reasonably#合理
 helmet#头盔
+expanding#扩展
 courtesy#礼貌
 retreat#撤退
 beam#光束
@@ -3632,9 +3663,11 @@ dessert#甜点
 timber#木材
 connect#连接
 breathe#呼吸
+criticized#批评
 protocol#协议
 butt#屁股
 tribute#贡
+artifacts#文物
 rocket#火箭
 motivated#有动机
 greenhouse#温室
@@ -3645,6 +3678,7 @@ mansion#大厦
 streak#条纹
 orthodox#正统
 illusion#错觉
+permitted#允许
 downstairs#楼下
 temporarily#暂时地
 harvest#收成
@@ -3671,6 +3705,7 @@ addiction#瘾
 shortage#短缺
 spine#脊柱
 reservation#预订
+counted#计数
 geographic#地理
 conception#概念
 gorgeous#华丽的
@@ -3702,6 +3737,7 @@ namely#即
 refugee#难民
 torture#酷刑
 lung#肺
+securities#证券
 reminder#提醒
 harbor#港口
 export#出口
@@ -3709,6 +3745,7 @@ fancy#想要
 revenge#复仇
 epidemic#流行性
 rod#杆
+predicted#预测
 probability#可能性
 nutrition#营养
 needle#针
@@ -3748,6 +3785,7 @@ copyright#版权
 separately#分别地
 accordingly#因此
 supervision#监督
+suspended#暂停
 grab#抓住
 convenient#方便的
 rotation#旋转
@@ -3762,6 +3800,7 @@ lane#车道
 unnecessary#不必要
 solo#独奏
 egyptian#埃及人
+evenly#均匀地
 fourteen#十四
 critique#批判
 overhead#开销
@@ -3959,7 +3998,9 @@ entity#实体
 warehouse#仓库
 reproductive#生殖
 feminine#女性
+molecules#分子
 liberation#解放
+documented#已记录
 warrior#战士
 miserable#悲惨的
 harmful#有害
@@ -3967,6 +4008,7 @@ poster#海报
 efficacy#功效
 parallel#平行线
 amateur#业余
+permanently#永久的
 relate#涉及
 erosion#侵蚀
 drought#干旱
@@ -4064,6 +4106,8 @@ holocaust#大屠杀
 courtyard#庭院
 absurd#荒诞
 dim#暗淡
+adequately#充分
+strings#字符串
 spy#间谍
 mustard#芥末
 carol#颂歌
@@ -4227,6 +4271,7 @@ glorious#辉煌
 delegation#代表团
 crisp#脆
 beautifully#非常漂亮
+smoothly#顺利
 rug#小地毯
 notorious#臭名昭著
 naive#幼稚的
@@ -4258,9 +4303,11 @@ lasting#持久
 announce#宣布
 vigorous#蓬勃
 jealous#嫉妒的
+aggressively#咄咄逼人
 ecosystem#生态系统
 questionable#值得怀疑
 cooperate#合作
+personalities#个性
 rationale#理由
 lamb#羊肉
 anthropology#人类学
@@ -4283,8 +4330,10 @@ surroundings#周围环境
 dig#挖
 handy#便利
 coincidence#巧合
+conceived#构思
 honesty#诚实
 foam#泡沫
+antibiotics#抗生素
 closure#关闭
 varied#多种多样
 monkey#猴
@@ -4312,6 +4361,7 @@ fulfill#实现
 successor#接班人
 knock#敲
 geographical#地理
+shifting#转变
 confusing#令人困惑
 obstacle#障碍
 lottery#彩票
@@ -4332,6 +4382,7 @@ communism#共产主义
 embedded#嵌入式
 toast#吐司
 icy#冰冷的
+sustained#持续
 attachment#依恋
 urge#敦促
 indictment#起诉书
@@ -4365,6 +4416,7 @@ arose#出现
 ribbon#丝带
 asthma#哮喘
 entertaining#娱乐
+poised#准备
 suitcase#手提箱
 sergeant#军士
 aurora#极光
@@ -4444,6 +4496,7 @@ interface#界面
 coin#硬币
 incorporate#包含
 unacceptable#不可接受
+opposing#反对
 maturity#到期
 idiot#笨蛋
 imaginary#假想
@@ -4490,6 +4543,7 @@ reflective#反光的
 niche#小众市场
 lettuce#莴苣
 intermediate#中间的
+restored#恢复
 treasury#财政部
 lucrative#利润丰厚
 discomfort#不适
@@ -4628,6 +4682,7 @@ bait#饵
 coherent#相干
 neglect#忽视
 hybrid#杂交种
+projected#预计
 textbook#教科书
 whiskey#威士忌酒
 intrinsic#固有的
@@ -4672,6 +4727,7 @@ pastoral#牧灵
 realism#现实主义
 prairie#草原
 tomb#墓
+extensively#广泛地
 tap#轻敲
 watercolor#水彩
 altered#已修改
@@ -4785,6 +4841,7 @@ worthwhile#值得
 appealing#上诉
 destined#注定
 unstable#不稳定
+puzzled#困惑
 hose#软管
 probation#缓刑
 infrared#红外线的
@@ -4837,6 +4894,7 @@ temper#脾气
 carriage#运输
 emperor#皇帝
 parlor#客厅
+unified#统一
 forensic#法医
 obscure#朦胧
 resigned#辞职
@@ -4845,6 +4903,7 @@ sincere#真诚
 repetition#重复
 doctoral#博士
 dedication#奉献
+designated#指定的
 tangible#有形
 autonomous#自主
 behave#表现
@@ -4891,6 +4950,7 @@ disappointing#令人失望
 dire#可怕的
 trillion#兆
 alternate#备用
+vigorously#大力
 provocative#挑衅
 stamp#邮票
 secrecy#保密
@@ -4963,6 +5023,7 @@ preventive#预防
 arbitrary#随意的
 substitute#代替
 scratch#划痕
+prolonged#延长
 trademark#商标
 timely#及时
 oneself#自己
@@ -4997,8 +5058,11 @@ hub#中心
 presently#目前
 saint#圣
 expose#暴露
+voluntarily#自愿
 respectable#可敬
 sunrise#日出
+spectators#观众
+archives#档案
 intervene#干预
 interrogation#审讯
 conjunction#连词
@@ -5053,9 +5117,11 @@ frenzy#狂热
 morale#士气
 petroleum#石油
 archer#射手
+unexpectedly#不料
 plight#困境
 fertilizer#肥料
 biologist#生物学家
+enormously#非常
 configuration#配置
 punish#惩治
 hazard#冒险
@@ -5069,7 +5135,9 @@ doe#雌鹿
 militant#好战分子
 scar#瘢痕
 sickness#疾病
+inherently#本质上
 compartment#隔间
+startling#令人震惊
 cathedral#大教堂
 torso#躯干
 accidental#偶然
@@ -5098,6 +5166,7 @@ curse#诅咒
 periodic#周期性
 poultry#家禽
 sic#原文如此
+enacted#已颁布
 cubic#立方体
 venue#场地
 revision#修订
@@ -5141,6 +5210,7 @@ rainy#下雨
 gigantic#巨大
 cardboard#纸板
 electron#电子
+defended#辩护
 aquatic#水
 deposition#沉积
 cache#缓存
@@ -5156,7 +5226,9 @@ stellar#恒星
 thunder#雷
 durable#耐用的
 canoe#独木舟
+appreciated#感谢
 swamp#沼泽
+anticipated#预期
 bleak#苍凉
 calculation#计算
 intentionally#故意
@@ -5165,6 +5237,7 @@ sociology#社会学
 hatch#孵化
 plague#瘟疫
 particle#粒子
+violently#暴力
 kindness#仁慈
 allocation#分配
 arrogant#傲慢的
@@ -5325,6 +5398,7 @@ modernization#现代化
 rivalry#对抗
 opener#开场
 wreck#破坏
+regulated#受监管
 endeavor#努力
 mediation#调解
 tribunal#法庭
@@ -5463,6 +5537,7 @@ module#模块
 honeymoon#蜜月
 mustache#胡子
 stump#树桩
+devastated#遭受重创
 hesitation#犹豫
 strategist#战略家
 transparency#透明度
@@ -5532,6 +5607,7 @@ continental#大陆
 cellar#地窖
 decoration#装饰
 restrict#限制
+indefinitely#无限期
 withstand#经受
 volcanic#火山
 irregular#不规律的
@@ -5603,6 +5679,7 @@ protagonist#主角
 bump#撞
 interdisciplinary#跨学科
 humane#人道
+indicted#被起诉
 packet#包
 sprang#弹簧
 farewell#告别
@@ -5617,18 +5694,21 @@ reckless#鲁莽
 avid#狂热
 retaliation#报复
 catholicism#天主教
+outskirts#郊区
 freeze#冻结
 intentional#故意
 borne#出生
 eyebrow#眉
 tanner#皮匠
 evolve#发展
+prohibited#禁止
 snap#折断
 consolidation#合并
 submarine#潜艇
 phony#假
 filthy#污秽
 avoidance#回避
+integrating#整合
 swam#游泳
 sewer#下水道
 membrane#膜
@@ -5637,6 +5717,7 @@ commercially#商业上
 dizzy#晕眩的
 symphony#交响乐
 disposition#处置
+retailer#零售商
 nuisance#滋扰
 hefty#沉重的
 shovel#铲
@@ -5805,6 +5886,7 @@ camel#骆驼
 surround#环绕
 uncovered#裸露
 apparel#服饰
+intrigued#好奇
 vine#藤
 lest#免得
 ledge#壁架
@@ -5849,6 +5931,7 @@ deterioration#恶化
 monk#僧
 spiral#螺旋
 juicy#多汁的
+amenities#便利设施
 sophistication#复杂
 dial#拨号
 pneumonia#肺炎
@@ -5859,6 +5942,7 @@ undergo#经历
 rag#抹布
 fluorescent#荧光
 pilgrimage#朝圣
+prescribed#规定
 oriental#东方
 dividend#股利
 gravitational#引力
@@ -5880,6 +5964,7 @@ worthless#毫无价值
 ecstasy#狂喜
 alcoholism#酗酒
 grove#树林
+detained#被拘留
 plum#李子
 brochure#宣传册
 assert#断言
@@ -5985,11 +6070,14 @@ bluff#虚张声势
 chalk#粉笔
 mint#薄荷
 dreadful#可怕
+contaminated#污染
 scout#侦察
 geese#鹅
 containment#遏制
+inadvertently#无意中
 endorse#认可
 limestone#石灰石
+belongings#财物
 resemble#类似
 undertake#承担
 scant#稀少
@@ -5999,6 +6087,7 @@ impetus#动力
 granddaughter#孙女
 expanse#广阔
 towering#参天
+implicitly#隐式地
 handwriting#手写
 self-confidence#自信
 dorm#宿舍
@@ -6019,6 +6108,7 @@ tolerant#宽容
 interpretive#解释性的
 reconcile#调和
 paramount#派拉蒙
+faintly#淡淡的
 orchard#果园
 penetrate#穿透
 elegance#优雅
@@ -6035,6 +6125,7 @@ portray#写真
 bail#保释
 modernist#现代主义
 motto#座右铭
+resumed#恢复
 plump#丰满
 malpractice#弊端
 spill#洒
@@ -6047,6 +6138,7 @@ muted#静音
 diagram#图表
 fetus#胎儿
 violet#紫色
+burgeoning#蓬勃发展
 helm#舵
 shareholder#股东
 utilization#利用率
@@ -6124,9 +6216,11 @@ candid#坦率
 mantle#地幔
 conceal#隐藏
 masterpiece#杰作
+strengthened#加强
 accelerate#加速
 sloppy#邋遢
 luminous#发光的
+intimidating#令人畏惧的
 sly#狡猾
 hypocrisy#虚伪
 sterile#无菌
@@ -6235,6 +6329,7 @@ dysfunctional#功能失调
 expenditure#支出
 accusation#指控
 psychiatry#精神病学
+prominently#突出地
 sinister#险恶
 consume#消耗
 numerical#数值
@@ -6265,11 +6360,14 @@ brandy#白兰地
 woven#编织
 equitable#公平
 adjustable#可调节的
+swirling#旋转
 starvation#饥饿
+shattered#破碎
 defiant#桀骜不驯
 peril#危险
 dissertation#论文
 sanitation#卫生
+manipulated#操纵
 mural#壁画
 flung#扔
 geometric#几何的
@@ -6285,6 +6383,7 @@ finale#终曲
 convoy#护航
 marxist#马克思主义
 manure#肥料
+tilted#斜
 assorted#各种各样的
 ventilation#通风
 poignant#令人心酸的
@@ -6369,9 +6468,11 @@ yeast#酵母
 seductive#诱人的
 cynicism#玩世不恭
 acoustic#声学
+striving#努力
 logistics#后勤
 squarely#完全
 dip#蘸
+fumes#烟雾
 disdain#蔑视
 incompetent#不称职的
 banquet#宴会
@@ -6453,6 +6554,7 @@ unpaid#未付
 sixteenth#第十六
 fungus#菌
 bolster#支撑
+crossfire#交叉火力
 savage#野蛮的
 chord#弦
 proportional#比例
@@ -6531,6 +6633,7 @@ cerebral#大脑
 mailbox#邮箱
 brutally#残酷地
 conform#符合
+awkwardly#尴尬地
 caption#标题
 bland#平淡
 thirsty#渴
@@ -6563,6 +6666,7 @@ lineage#血统
 wig#假发
 deterrent#威慑
 nominal#名义上的
+dissolved#溶解
 cloudy#多云
 prehistoric#史前
 pictorial#画报
@@ -6600,6 +6704,7 @@ paradoxically#矛盾的是
 resurgence#再起
 anthem#国歌
 baton#指挥棒
+morals#德
 intolerance#不容忍
 siren#警笛
 orthodoxy#正统
@@ -6652,6 +6757,7 @@ anew#重新
 constrained#受限
 mediocre#平庸
 extraction#萃取
+delicately#轻柔地
 symmetry#对称
 booster#增压器
 derrick#钻井架
@@ -6662,6 +6768,7 @@ caste#种姓
 hilarious#太搞笑了
 chick#小鸡
 hurdle#栏
+brilliantly#精彩
 slap#拍击
 electromagnetic#电磁
 apprehension#忧虑
@@ -6743,6 +6850,7 @@ perch#栖息
 berth#泊位
 turbulence#湍流
 heater#加热器
+relentlessly#毫不留情
 boldly#大胆地
 homogeneous#均质
 sparse#疏
@@ -6775,6 +6883,7 @@ latent#潜
 embryo#胚胎
 forcefully#强硬地
 tempo#速度
+stairway#楼梯
 hawk#鹰
 quarry#采石场
 perceptual#感知
@@ -6825,6 +6934,7 @@ forge#锻造
 confinement#监禁
 satire#讽刺
 rip#撕裂
+excesses#过剩
 mammoth#长毛象
 attire#服装
 kite#风筝
@@ -6862,6 +6972,7 @@ anterior#前部
 moderation#适度
 alternately#交替
 unite#团结
+tenderness#压痛
 chestnut#板栗
 far-reaching#深远
 righteous#正义
@@ -6892,6 +7003,7 @@ trumpet#喇叭
 disarmament#裁军
 prolific#多产的
 treacherous#奸诈
+infinitely#无限地
 climax#高潮
 bitten#被咬
 mythical#神话
@@ -6939,9 +7051,11 @@ archbishop#大主教
 outpost#前哨
 bred#繁殖
 sol#索尔
+obscured#模糊不清
 grenade#手榴弹
 broaden#扩大
 guarded#守卫
+spontaneously#自发地
 plead#恳求
 prowess#能力
 flair#天赋
@@ -6985,7 +7099,9 @@ incorrectly#错误地
 uniformly#均匀地
 embodiment#实施例
 giddy#头晕
+dispersed#分散的
 measurable#可测量的
+reassuring#令人安心
 sneaking#鬼鬼祟祟
 impatience#不耐烦
 glucose#葡萄糖
@@ -7003,10 +7119,12 @@ assassin#刺客
 prenatal#产前
 realistically#现实地
 saliva#唾液
+diverted#改道
 infinity#无穷大
 repay#偿还
 allergy#过敏
 immersed#沉浸式
+teasing#戏弄
 replica#复制品
 detachment#分离
 manifest#显现
@@ -7044,6 +7162,7 @@ inland#内陆
 demolition#拆除
 footnote#脚注
 affidavit#宣誓书
+strolling#漫步
 lookout#瞭望台
 correctness#正确性
 kettle#壶
@@ -7056,6 +7175,8 @@ geographically#地理上
 cheat#欺骗
 analytic#分析
 bogus#虚假
+gadgets#小工具
+blinds#百叶窗
 referee#裁判
 concede#承认
 freak#怪物
@@ -7064,6 +7185,7 @@ predominant#主要的
 articulation#关节
 recourse#追索权
 legislator#立法者
+crumbling#摇摇欲坠
 commotion#骚动
 delegate#代表
 nonfiction#非虚构类
@@ -7086,6 +7208,7 @@ truthful#真实
 truce#休战
 waterproof#防水的
 bliss#极乐
+muffled#闷音
 frown#皱眉
 adamant#坚定不移
 retribution#报应
@@ -7106,6 +7229,7 @@ joyful#快乐
 throttle#风门
 pigment#颜料
 caliber#口径
+acclaimed#备受赞誉
 noticeably#明显地
 negotiator#谈判者
 undo#撤销
@@ -7164,11 +7288,14 @@ spit#吐
 instructive#有指导意义的
 sporadic#零星的
 puddle#水坑
+rapids#急流
 volatility#挥发性
 stately#庄严
 interplay#相互作用
 foreseeable#可预见的
+uniqueness#独特性
 hazy#朦胧
+handcuffs#手铐
 etiquette#礼仪
 depletion#消耗
 sail#帆
@@ -7180,6 +7307,7 @@ muster#鼓起
 drown#溺水
 elastic#松紧带
 welsh#威尔士语
+modestly#谦虚地
 dormant#休眠
 straighten#拉直
 milieu#环境
@@ -7253,11 +7381,13 @@ comb#梳子
 coercive#强制性的
 pedagogy#教育学
 emigration#移民
+collapsing#崩溃
 pigeon#鸽子
 galley#厨房
 lagoon#泻湖
 arsenic#砷
 aptly#恰当地
+concealed#暗
 wretched#可怜
 enroll#注册
 dissolution#溶解
@@ -7276,6 +7406,7 @@ grandeur#宏伟
 extremist#极端分子
 hind#后
 predictably#不出所料
+unconsciously#不知不觉
 quotation#引述
 precursor#前体
 antiquity#古代
@@ -7286,6 +7417,7 @@ covenant#盟约
 infertility#不孕症
 fraught#充满危机
 literate#识字的
+oppressed#受压迫者
 airtight#密闭
 incarceration#监禁
 tart#酸
@@ -7296,6 +7428,7 @@ envision#设想
 imitate#模拟
 endemic#地方性
 harshly#严厉地
+protracted#拖延
 utmost#极致
 shrill#尖锐
 versatility#多功能性
@@ -7307,6 +7440,7 @@ weekday#工作日
 snug#舒适
 realist#现实主义者
 trickle#涓涓细流
+enclosed#内
 regal#尊贵
 carnival#狂欢
 primer#底漆
@@ -7325,6 +7459,7 @@ regiment#团
 stormy#暴风雨
 reconnaissance#侦察
 appliance#器具
+prematurely#过早
 fluent#流利
 negligible#微不足道
 proclamation#公告
@@ -7342,6 +7477,7 @@ diagonal#对角线
 empirically#经验性的
 meticulously#精心
 incense#香
+supernova#超新星
 disposed#处置
 grit#砂砾
 chronicle#编年史
@@ -7353,6 +7489,7 @@ relic#遗迹
 curl#卷曲
 abduction#绑架
 counterproductive#适得其反
+suppressed#被抑制
 cartilage#软骨
 allure#引诱
 immature#不成熟
@@ -7362,6 +7499,7 @@ labyrinth#迷宫
 cashier#出纳员
 tango#探戈
 compulsive#强迫症
+individualized#个性化
 tutor#导师
 prophetic#预言
 kayak#皮艇
@@ -7439,7 +7577,9 @@ wink#眨眼
 immersion#浸没
 accumulate#积累
 simulate#模拟
+toughness#韧性
 complication#并发症
+eroded#侵蚀
 biographer#传记作家
 emblem#徽
 antidote#解毒剂
@@ -7485,6 +7625,7 @@ horsepower#马力
 embarrass#尴尬
 inventive#富有创造力的
 doubtless#毫无疑问
+specialization#专业化
 tally#相符
 remnant#剩
 prop#支柱
@@ -7535,6 +7676,7 @@ floppy#软盘
 cutter#刀具
 xerox#复印
 veal#小牛肉
+unwillingness#不情愿
 pessimism#悲观主义
 disgruntled#不满的
 ornamental#装饰
@@ -7547,6 +7689,7 @@ toxicity#毒性
 indistinguishable#无法区分的
 illiterate#文盲
 shortfall#短缺
+decisively#果断地
 marginally#略微
 enrich#丰富
 stagnant#停滞不前
@@ -7569,6 +7712,7 @@ aspiration#抱负
 mason#石匠
 joyous#欢乐
 evoke#唤起
+symbolically#象征意义上的
 appetizer#开胃菜
 flare#耀斑
 eddy#涡流
@@ -7584,6 +7728,7 @@ lesion#病变
 cumbersome#笨重
 faithfully#忠实
 grotesque#怪诞
+adorned#装饰
 thereof#其中
 dissemination#传播
 perpetrator#犯罪者
@@ -7626,6 +7771,7 @@ rumble#隆隆
 majesty#威严
 melon#瓜
 bravery#勇敢
+cohorts#队列
 tunic#束腰外衣
 pollster#民意调查员
 watchful#警惕
@@ -7646,6 +7792,7 @@ activation#激活
 polymer#聚合物
 overriding#覆盖
 lax#松散
+stimulated#刺激
 sewn#缝制
 prescribe#规定
 calculus#结石
@@ -7666,8 +7813,10 @@ deportation#驱逐出境
 euphoria#欣快感
 sleeper#轨枕
 audition#试镜
+excessively#过度
 extremism#极端主义
 censure#谴责
+selectively#选择性地
 composure#镇定
 glee#高兴
 evacuate#撤离
@@ -7746,6 +7895,7 @@ heartfelt#衷心
 brace#支撑
 chandelier#枝形吊灯
 summon#召唤
+deserts#沙漠
 patchwork#拼布
 strenuous#费力的
 statesman#政治家
@@ -7772,6 +7922,7 @@ self-sufficient#自给自足
 preparatory#预备
 delinquent#不良少年
 tumultuous#动荡的
+antics#滑稽动作
 drip#滴
 authorize#授权
 intrinsically#本质上
@@ -7814,6 +7965,7 @@ ponder#思考
 blitz#闪电战
 plume#羽
 gorge#峡谷
+disrupted#中断
 obscurity#朦胧
 serenity#宁静
 handbook#手册
@@ -7831,6 +7983,7 @@ molten#熔融的
 repertory#曲目
 pavilion#亭
 maize#玉米
+diminishing#减少
 egregious#极其恶劣
 rarity#稀有性
 accompaniment#伴奏
@@ -7860,6 +8013,7 @@ impossibility#不可能
 murmur#低语
 shawl#披肩
 posterior#后部
+cherished#珍爱
 avert#避免
 agitated#激动
 spur#刺
@@ -8017,6 +8171,7 @@ overthrow#推翻
 cascade#级联
 sarcasm#讽刺
 preach#布道
+bleachers#看台
 spatula#抹刀
 impromptu#即兴
 inconvenient#不方便
@@ -8068,6 +8223,7 @@ fore#前
 inquire#查询
 nudity#裸露
 leopard#豹
+stubbornly#固执地
 handwritten#手写
 thicket#灌木丛
 swarm#蜂群
@@ -8154,6 +8310,7 @@ amputation#截肢
 depart#离开
 evocative#令人回味的
 levee#堤坝
+tainted#受污染的
 delicacy#美味
 padding#填充
 garrison#驻军
@@ -8163,6 +8320,7 @@ canonical#典范
 betray#背叛
 disarm#解除武装
 veterinary#兽医
+hampered#受阻
 midsummer#盛夏
 firearm#火器
 burgess#伯吉斯
@@ -8182,9 +8340,11 @@ unfit#不合格
 buckle#扣上
 fanfare#号角
 rigor#严格
+inverted#倒
 alteration#改造
 fuse#保险丝
 jurisprudence#法理
+magnified#放大
 encompass#包含
 apprehensive#忧虑
 intrigue#阴谋
@@ -8249,12 +8409,14 @@ juxtaposition#并置
 superstition#迷信
 philanthropy#慈善事业
 chromosome#染色体
+accelerating#加速
 roadway#道路
 hamstring#腿筋
 shutter#快门
 harmonic#谐波
 informally#非正式地
 hoarse#嘶哑
+stalemate#僵局
 uniformity#均匀性
 impenetrable#坚不可摧
 artistry#艺术性
@@ -8263,6 +8425,7 @@ holster#枪套
 retrieval#检索
 tribune#论坛
 leakage#泄漏
+differentiated#差异化
 supervisory#主管
 reformer#改革者
 tuxedo#燕尾服
@@ -8288,12 +8451,14 @@ separatist#分离主义者
 dune#沙丘
 vying#竞争
 flamboyant#龙飞凤舞
+nervousness#紧张
 garb#外衣
 dislike#不喜欢
 softness#柔软
 susceptibility#易感性
 deviant#异常
 thwart#阻挠
+alienated#疏离的
 indefinite#不定
 tablecloth#桌布
 aristocracy#贵族
@@ -8397,6 +8562,7 @@ frighten#吓唬
 incredulous#难以置信
 negligent#疏忽
 ethnography#民族志
+underestimated#低估
 brash#鲁莽
 painless#无痛
 preclude#排除
@@ -8406,6 +8572,7 @@ strata#地层
 percussion#打击乐器
 anemia#贫血
 instill#灌输
+bolted#螺栓连接
 causality#因果关系
 lieu#代替
 painstakingly#精心
@@ -8493,6 +8660,7 @@ illuminating#启发性的
 grueling#严罚
 rife#普遍存在
 carefree#畅快
+misgivings#疑虑
 rotate#旋转
 scroll#滚动
 underdog#弱者
@@ -8526,6 +8694,7 @@ unfounded#毫无根据
 textured#纹理
 epoch#时代
 expletive#脏话
+diligently#勤勉地
 coincide#重合
 irritable#易怒的
 safari#狩猎旅行
@@ -8598,6 +8767,7 @@ prism#棱镜
 gall#瘿
 widen#扩大
 transatlantic#跨大西洋
+infrequently#不常
 tyrant#暴君
 unskilled#非熟练工
 fervent#热切
@@ -8612,6 +8782,7 @@ usher#引座员
 cleverly#巧妙地
 searing#灼烧
 inconsistency#不一致
+straits#海峡
 farce#闹剧
 howl#嗥
 emancipation#解放
@@ -8637,12 +8808,14 @@ humanism#人道主义
 sumptuous#豪华
 detriment#损害
 foray#突袭
+streamlined#流线型
 assimilate#吸收
 biscuit#饼干
 maiden#少女
 molasses#糖蜜
 rubric#评分标准
 secession#分裂
+humiliated#受辱
 neurotic#神经质
 shortcut#捷径
 choreography#编舞
@@ -8693,6 +8866,7 @@ flop#失败
 shortening#缩短
 heirloom#传家宝
 ram#内存
+sparsely#稀疏地
 stagnation#停滞
 hanger#衣架
 detergent#洗涤剂
@@ -8750,6 +8924,7 @@ scotch#苏格兰威士忌
 fahrenheit#华氏度
 dissident#异议人士
 twig#枝条
+munitions#弹药
 patriarchy#父权制
 relinquish#放弃
 dispel#打消
@@ -8774,6 +8949,7 @@ fluke#吸虫
 pickle#泡菜
 steamer#汽船
 dispersal#扩散
+renovated#翻新
 insertion#插入
 pendant#吊坠
 grate#格特
@@ -8813,12 +8989,14 @@ observance#观察
 foresee#预见
 disrespect#不尊重
 shiver#颤抖
+institutionalized#制度化的
 strait#海峡
 mores#习俗
 exhale#呼气
 putative#假定的
 severance#遣散费
 contestant#选手
+intuitively#直觉上
 effortless#毫不费力
 unsatisfactory#不令人满意
 denominator#分母
@@ -8828,6 +9006,7 @@ cardinal#红衣主教
 methodical#有条不紊
 brazen#厚颜无耻
 spontaneity#自发性
+perceiving#感知
 creep#潜行者
 consumerism#消费主义
 plow#犁
@@ -8845,6 +9024,7 @@ cylindrical#圆柱体
 inferiority#自卑
 homogeneity#同质性
 heresy#异端
+discouraging#令人沮丧
 grandiose#宏伟的
 ridicule#嘲笑
 intermediary#中介
@@ -8939,6 +9119,7 @@ maturation#成熟
 meteorite#陨石
 poke#戳
 strident#刺耳的
+reconciled#和解
 musty#发霉的
 entice#诱惑
 self-evident#不言而喻
@@ -8966,6 +9147,7 @@ foothold#立足点
 mottled#斑驳
 stash#藏
 tranquility#宁静
+engraved#刻
 cleavage#乳沟
 philanthropic#慈善
 apparition#幻影
@@ -8988,6 +9170,7 @@ restitution#归还
 outlandish#古怪的
 acronym#首字母缩写词
 queasy#恶心
+sternly#严厉地
 righteousness#义
 idiom#成语
 preemptive#先发制人
@@ -9003,6 +9186,7 @@ ineligible#不符合资格
 backlog#积压
 kilometer#公里
 liquidity#流动性
+throes#阵痛
 disservice#不服务
 clatter#哒
 syntax#句法
@@ -9010,8 +9194,10 @@ altruism#利他主义
 heinous#令人发指的
 involuntarily#不由自主
 pixel#像素
+enticing#诱人的
 exacting#严格
 adore#崇拜
+snarled#纠缠
 disinterested#无私的
 tantamount#等同
 maneuvering#机动
@@ -9177,10 +9363,12 @@ overrun#超限
 ruefully#懊悔地
 ire#愤怒
 allocate#分配
+predetermined#预先设定
 conciliatory#和解
 prodigy#神童
 permanence#永久性
 cursory#粗略地
+qualms#疑虑
 fussy#挑剔的
 offbeat#另类
 congruent#全等
@@ -9199,6 +9387,7 @@ hive#蜂巢
 admirer#仰慕者
 slung#吊着
 commemorative#纪念
+antecedents#来路
 falcon#鹘
 handsomely#英俊地
 well-to-do#富裕的
@@ -9213,6 +9402,7 @@ unequivocal#明确的
 passivity#被动性
 nautical#航海
 sorcery#巫术
+succinctly#简洁地
 symbolize#象征
 muse#沉思
 madam#女士
@@ -9244,6 +9434,7 @@ noisily#喧闹地
 cocoon#茧
 dislocation#错位
 scathing#尖刻
+intermittently#间歇性地
 whack#猛击
 sensuous#感性的
 silverware#银器
@@ -9293,6 +9484,7 @@ rebuttal#反驳
 assent#同意
 jigsaw#拼图
 hustle#努力奋斗
+passively#被动地
 behemoth#巨兽
 dank#dank
 incoherent#语无伦次
@@ -9306,6 +9498,8 @@ fleece#羊毛
 augment#增强
 boundless#无边无际
 unending#无尽的
+amplified#放大
+diluted#稀
 parasitic#寄生
 immunization#免疫接种
 fickle#反复无常
@@ -9412,6 +9606,7 @@ disingenuous#虚伪的
 fanatic#狂热分子
 lettering#字母
 reshape#重塑
+outnumbered#寡不敌众
 greenish#绿绿色
 adoration#崇拜
 pronunciation#发音
@@ -9436,7 +9631,9 @@ stallion#骘
 sordid#肮脏的
 orally#口头
 meek#温顺
+deceptively#具有欺骗性的
 superfluous#多余
+imbued#注入
 lenient#宽容
 rout#路线
 aesthetically#美学上
@@ -9450,8 +9647,10 @@ disengagement#脱离
 calibration#校准
 bastion#堡垒
 incongruous#不协调
+tiring#令人疲惫
 bereft#失去
 carelessly#粗心大意
+trapping#诱捕
 burdensome#负担
 gulp#咕噜
 woolly#毛茸茸的
@@ -9497,7 +9696,9 @@ furnish#提供
 inefficiency#效率低下
 frugal#节俭
 elf#精灵
+protruding#突出
 stoic#斯多葛派
+inferred#推断
 screech#尖叫
 feudal#封建
 humanistic#人文主义
@@ -9510,6 +9711,7 @@ combative#好斗的
 congenial#相投
 voodoo#巫毒教
 kiosk#亭
+billowing#翻滚
 retaliate#报复
 herald#先驱
 grille#格栅
@@ -9525,7 +9727,9 @@ illustrative#举例说明
 vernacular#白话
 hydroelectric#水力发电
 haphazard#偶然
+skewed#倾斜
 bathe#洗澡
+springboard#跳板
 didactic#教学
 mysticism#神秘主义
 blacksmith#铁匠
@@ -9533,6 +9737,7 @@ primate#灵长类动物
 abbey#修道院
 outweigh#胜过
 deceit#欺骗
+numbness#麻木
 judgement#判断
 sobriety#清醒
 exacerbate#加剧
@@ -9618,6 +9823,7 @@ ecologist#生态学家
 corporal#下士
 audacity#大胆
 liberally#慷慨地
+politeness#礼貌
 infringement#侵权
 able-bodied#身强力壮的
 scriptural#圣经
@@ -9638,6 +9844,7 @@ exorbitant#高昂
 trickling#涓涓细流
 outnumber#人数占优
 dainty#纤巧
+discredited#声名狼藉
 repaid#已偿还
 lunatic#疯子
 scrimmage#对抗赛
@@ -9665,11 +9872,14 @@ succulent#多肉植物
 artistically#艺术上
 radiance#辐射
 callous#冷酷
+precariously#岌岌可危
 destitute#贫困
+symbiotic#共生
 sod#草皮
 artfully#巧妙地
 quandary#困惑
 tremble#颤抖
+forebears#祖先
 tumble#翻滚
 vocalist#歌手
 seclusion#隔离
@@ -9683,6 +9893,7 @@ arbiter#仲裁者
 spasm#痉挛
 adaptability#适应性
 turret#炮塔
+honed#磨砺
 leery#警惕
 clamor#叫嚣
 unbridled#不受约束的
@@ -9730,6 +9941,7 @@ arouse#引起
 decorum#礼仪
 legislate#立法
 cowardice#怯懦
+conserving#保护
 gunpowder#火药
 sinner#罪人
 escalator#自动扶梯
@@ -9747,6 +9959,7 @@ atheist#无神论者
 gusto#我喜欢
 irreverent#不敬的
 garish#扎眼
+rumpled#皱巴巴的
 sniff#嗅
 lingo#行话
 gratuitous#无偿的
@@ -9754,6 +9967,7 @@ glut#谷
 importation#输入
 penicillin#青霉素
 amazon#亚马逊
+sporadically#偶尔
 pesky#讨厌的
 naivete#刀
 philanthropist#慈善家
@@ -9816,19 +10030,23 @@ mediocrity#平庸
 organically#有机地
 intelligentsia#知识分子
 entomologist#昆虫学家
+restlessness#躁动不安
 fling#一扔
 cancerous#癌变
 promiscuous#淫乱
 bribe#贿赂
 tributary#支流
 invisibility#隐形
+lavishly#慷慨地
 judicious#明智的
 coy#害羞
 inflexible#不灵活的
 beefy#仡
+intensively#密集地
 grimace#鬼脸
 cold-blooded#冷血动物
 behold#看哪
+surreptitiously#偷偷摸摸
 discerning#有洞察力
 condone#宽恕
 cameo#客串
@@ -9849,16 +10067,20 @@ provenance#出处
 proton#质子
 ramshackle#摇摇欲坠的
 unyielding#不屈
+apprehended#被捕
 antithetical#对立的
 equivalence#等价
 ascetic#苦行僧
 medial#内侧
 originate#起源
 amphitheater#露天剧场
+intricately#错综复杂
 tempt#诱惑
 awkwardness#尴尬
 forgave#原谅了
+qualitatively#定性地
 cinder#煤渣
+shears#剪
 lockout#闭锁
 exaggerate#夸大
 confidant#知己
@@ -9954,6 +10176,7 @@ savannah#萨凡纳
 concoction#混合物
 incurable#不治之症
 acquiescence#默认
+sharpness#锐利度
 penitentiary#监狱
 matrices#矩阵
 forestall#垄断
@@ -10053,6 +10276,7 @@ revert#恢复
 outmoded#陈旧
 mushy#糊状
 grammatical#语法
+needlessly#不必要的
 hasten#趋
 sarcastically#讽刺地
 open-minded#思想开明的
@@ -10061,6 +10285,7 @@ legitimize#合法化
 tread#踏
 treachery#背信弃义
 shimmer#闪烁
+mists#薄雾
 temperamental#性情古怪
 wield#挥
 furtive#鬼鬼祟祟
@@ -10114,6 +10339,7 @@ inhalation#吸入
 masquerade#化装舞会
 voluptuous#丰满的
 intelligently#聪明地
+distorting#扭曲
 uncomplicated#简单
 angelic#天使般的
 mash#捣碎
@@ -10132,6 +10358,7 @@ clot#凝块
 tertiary#第三
 rancid#馊
 amply#充足的
+habitually#习惯性地
 introspection#内省
 awning#棚
 magnetism#磁性
@@ -10149,6 +10376,7 @@ friendliness#友善
 lair#巢穴
 moslem#穆斯林
 rabies#狂犬病
+overpowering#压倒性的
 skimpy#简陋
 spindly#细长的
 purgatory#炼狱
@@ -10163,6 +10391,7 @@ kennel#狗窝
 tinge#色调
 flutter#扑
 introspective#内省
+assimilated#同化
 antiseptic#防腐剂
 stampede#踩踏
 narcissistic#自恋
@@ -10177,6 +10406,7 @@ insular#岛屿
 uptight#紧张
 loot#抢劫
 spool#线轴
+marred#受损
 askew#歪斜
 frothy#泡沫状的
 skim#撇去
@@ -10195,7 +10425,9 @@ waffle#胡扯
 recoil#畏缩
 transistor#晶体管
 accretion#吸积
+obsessively#痴迷地
 scrutinize#仔细审查
+interlocking#互锁
 delirious#谵妄
 rustle#沙沙
 infatuation#痴情
@@ -10209,6 +10441,7 @@ dashing#帅气
 deplorable#可悲的
 glide#滑行
 sleeveless#无袖的
+unfairness#不公平
 pore#孔隙
 thaw#解冻
 proverb#谚语
@@ -10238,6 +10471,7 @@ verdant#葱茏
 disseminate#传播
 homesick#想家
 trot#小跑
+suitability#适应性
 decadence#颓废
 kangaroo#袋鼠
 musket#滑膛枪
@@ -10250,6 +10484,7 @@ sentimentality#感伤
 dimensional#维度
 measles#麻疹
 grassland#草原
+sportsmanship#体育精神
 plagiarism#抄袭
 deem#认为
 excite#激发
@@ -10281,6 +10516,7 @@ dapper#衣着考究
 trickster#骗子
 prescient#先见之明
 indisputable#无可争议的
+superbly#极好
 hereafter#此后
 ointment#软膏
 duplex#双拼别墅
@@ -10292,6 +10528,7 @@ strangle#扼杀
 self-centered#以自我为中心
 repugnant#令人厌恶的
 swig#啜饮
+spatially#空间上
 conscription#征兵
 rubbery#橡胶状的
 tightness#紧绷
@@ -10339,6 +10576,7 @@ submissive#顺从者
 salinity#盐度
 unpretentious#朴实无华
 delectable#美味的
+crudely#粗略地
 euphoric#欣快
 lurch#困境
 beholder#旁观者
@@ -10366,9 +10604,11 @@ pearly#珍珠般的
 mutilation#残害
 defamation#诽谤
 convene#召开
+vanquished#战败者
 meteorologist#气象学家
 quiver#颤动
 sweltering#酷热
+fluctuating#波动
 detritus#碎屑
 spurious#虚假的
 discriminating#歧视性的
@@ -10399,6 +10639,7 @@ dissuade#劝阻
 invigorating#令人精神振奋
 overtake#超过
 tutelage#监护
+disapproving#不赞同
 browse#浏览
 anachronistic#不合时宜的
 resumption#恢复
@@ -10410,6 +10651,7 @@ antipathy#反感
 reincarnation#投胎
 totem#图腾
 microscopy#显微镜
+streamline#精简
 devious#狡猾的
 primeval#原始
 hustler#骗子
@@ -10424,6 +10666,7 @@ jellyfish#海蜇
 occult#神秘学
 convergent#收敛
 silica#二氧化硅
+suitably#适当地
 extravagance#奢侈
 untimely#不合时宜
 inflate#膨胀
@@ -10455,12 +10698,14 @@ efficacious#有效的
 syndicate#辛迪加
 glider#滑翔机
 pensive#沉思的
+shackles#镣铐
 savagery#野蛮
 enforceable#可强制执行
 chameleon#变色龙
 medallion#奖章
 cognizant#认知
 reorganize#改组
+stubbornness#固执
 subvert#颠覆
 flowery#如花
 intersect#相交
@@ -10477,6 +10722,7 @@ languid#慵懒的
 humbly#谦卑地
 rhythmically#有节奏地
 malleable#可塑性
+powerlessness#无力感
 bystander#旁观者
 antecedent#前件
 internment#拘留
@@ -10487,8 +10733,10 @@ unkempt#蓬头垢面
 insulate#隔离
 perky#活泼的
 countenance#面容
+stonewall#石墙
 immanent#内在的
 nightmarish#噩梦般的
+smoothness#平滑度
 benevolence#仁
 physiologist#生理学家
 latency#延迟
@@ -10521,6 +10769,7 @@ ordnance#军械
 recidivism#累犯
 dissipate#消散
 advisable#建议
+inadequately#不足
 flaring#燃烧
 divisional#部门
 portraiture#画像
@@ -10572,6 +10821,7 @@ vigilante#义务警员
 aggregation#聚合
 phobia#恐怖症
 rationalism#理性主义
+dispensed#分发
 stingy#小气
 strove#努力
 flirtation#调情
@@ -10589,6 +10839,7 @@ pence#便士
 implacable#冷酷无情
 amuse#娱乐
 travesty#闹剧
+ambushed#遭到伏击
 derivative#衍生物
 writ#写
 stethoscope#听诊器
@@ -10618,6 +10869,7 @@ sheaf#捆
 grotto#石窟
 snowflake#雪花
 rotunda#圆形大厅
+rudely#粗鲁地
 dilute#稀
 menial#卑微的
 compendium#概要
@@ -10628,6 +10880,7 @@ oscillation#振荡
 incomparable#无与伦比
 flattery#奉承
 servitude#奴役
+completeness#完整性
 dilution#稀释
 aria#咏叹调
 intonation#语调
@@ -10658,6 +10911,7 @@ repose#休息
 matron#护士长
 spleen#脾
 larynx#喉
+tarnished#失去光泽
 beholden#受托人
 stinking#臭
 flagrant#明目张胆
@@ -10698,11 +10952,13 @@ solicitation#征求意见
 educationally#教育方面
 eulogy#颂
 nirvana#涅槃
+shamelessly#厚颜无耻
 nefarious#邪恶
 infiltrate#浸润
 dexterity#灵巧
 treatable#可治疗
 waltz#华尔兹
+stratified#分层
 redemptive#救赎
 energetically#精力充沛地
 gallop#驰骋
@@ -10732,6 +10988,7 @@ understated#低调
 self-righteous#自以为是
 dutiful#尽职尽责的
 wanton#放肆
+compensating#补偿
 avenge#报仇
 bodice#紧身胸衣
 proportionate#成比例的
@@ -10771,7 +11028,9 @@ maltreatment#虐待
 hone#磨练
 oblige#义务
 redirect#重定向
+overbearing#霸道
 docile#温顺
+culpability#有罪
 verifiable#可验证的
 buoyancy#浮力
 apostle#使徒
@@ -10793,6 +11052,7 @@ tectonic#构造
 entanglement#纠缠
 caterer#餐饮服务商
 obstructive#阻塞
+unevenly#不均匀地
 imperious#专横
 irritate#刺激
 sneer#冷笑
@@ -10837,6 +11097,7 @@ firmness#硬度
 ashen#铁青
 pollutant#污染物
 blissfully#幸福地
+dazzled#眼花缭乱
 commendable#值得称赞
 smuggle#走私
 slur#污点
@@ -10850,6 +11111,7 @@ chimpanzee#黑猩猩
 selenium#硒
 imprecise#不精确
 laziness#懒惰
+sprout#发芽
 lullaby#催眠曲
 succinct#简洁
 shading#阴影
@@ -10869,6 +11131,7 @@ papacy#教皇
 quicken#加速
 curd#凝乳
 die-hard#死硬汉
+duplicated#重复
 glib#油嘴滑舌
 purge#清除
 wisp#一缕轻烟
@@ -10889,12 +11152,14 @@ thinness#薄
 cremation#火葬
 antigen#抗原
 haphazardly#随意地
+unjustly#不公正的
 rouse#唤醒
 immorality#不道德
 elitism#精英主义
 hibernation#冬眠
 mermaid#美人鱼
 insolvent#破产
+exhilarated#兴奋
 hypocrite#伪君子
 frailty#虚弱
 heiress#女继承人
@@ -10903,6 +11168,7 @@ inalienable#不可剥夺的
 musicianship#音乐才能
 fret#烦恼
 fortuitous#偶然
+unfocused#注意力不集中
 piecemeal#零散地
 infallible#绝对正确
 duress#胁迫
@@ -10927,6 +11193,7 @@ subliminal#潜意识
 vicarious#替代性的
 imperceptibly#不易察觉地
 galore#数不胜数
+customarily#习惯上
 condescension#居高临下
 inhumane#不人道
 irreconcilable#不可调和的
@@ -10937,6 +11204,7 @@ consul#领事
 canary#金丝雀
 weasel#黄鼠狼
 condor#秃鹰
+befriended#结交朋友
 alphabetical#按字母顺序排列
 hairdo#发型
 sequentially#按顺序
@@ -10967,6 +11235,7 @@ melee#近战
 viscous#粘稠的
 bandanna#头巾
 offshoot#分支
+inflamed#发炎的
 constrain#约束
 negotiable#可协商
 decode#解码
@@ -11009,6 +11278,7 @@ infuse#注入
 denunciation#谴责
 paternalistic#家长式作风
 equivocal#模棱两可
+interplanetary#星际
 plenary#全体会议
 assuage#缓和
 presumptuous#放肆
@@ -11017,6 +11287,7 @@ preside#主持
 unwind#放松
 demure#端庄
 reinstate#恢复
+insistently#坚持不懈
 sprig#枝
 perpetuation#延续
 nomenclature#命名法
@@ -11034,6 +11305,7 @@ distinguishable#可区分的
 suave#温文尔雅
 expedient#权宜
 gauzy#薄纱
+truthfulness#真实性
 knoll#小丘
 bushel#蒲式耳
 millet#粟
@@ -11048,6 +11320,7 @@ scrupulous#一丝不苟的
 gullible#容易上当受骗
 expediency#权宜之计
 infestation#虫害
+storeroom#库房
 ingestion#摄入
 fractious#易怒的
 commence#开始
@@ -11088,6 +11361,7 @@ schooner#大篷车
 indentation#缩进
 synchronous#同步
 modicum#少量
+strenuously#竭尽全力
 whimsy#异想天开
 dreamlike#如梦似幻
 salutary#有益的
@@ -11101,10 +11375,12 @@ sever#断绝
 possessive#所有格
 thatch#苫
 excitation#励磁
+machinations#阴谋
 nebulous#模糊的
 supposition#假设
 diabolical#邪恶的
 layman#外行
+shavings#刨花
 forte#长处
 patrician#贵族
 corset#紧身胸衣
@@ -11134,6 +11410,7 @@ teenaged#青少年
 pulley#滑轮
 referent#参考物
 jag#捷豹
+scrupulously#一丝不苟地
 profitably#盈利
 shrunken#缩小
 disagreeable#令人不快的
@@ -11160,6 +11437,7 @@ mauve#淡紫色
 monochromatic#单色
 scion#继承人
 bronchitis#支气管炎
+trustworthiness#可信度
 hybridization#杂交
 thoughtless#轻率
 serrated#锯齿状
@@ -11180,6 +11458,7 @@ forerunner#先行者
 grandly#宏伟
 ungainly#笨拙的
 commend#表彰
+substantiated#已证实
 deferential#尊重
 disenchantment#幻灭
 numerically#数值上
@@ -11219,6 +11498,7 @@ vowel#元音
 workman#工人
 hodgepodge#大杂烩
 morsel#小块
+disenfranchised#被剥夺选举权的
 directness#直接
 matriarch#女族长
 carnivorous#食肉的
@@ -11232,17 +11512,21 @@ shortcoming#缺点
 unobtrusive#不引人注目
 squalor#肮脏不堪
 corroborate#证实
+whacked#猛击
 vendetta#复仇
 abode#住所
 inhibitor#抑制剂
 isotope#同位素
 bailiff#法警
 averse#反
+recklessness#鲁莽
 dampness#潮湿
+tresses#头发
 ode#颂
 perforation#穿孔
 heartening#令人鼓舞
 reassuringly#令人安心
+inventiveness#创造力
 formulaic#公式化的
 resuscitation#复苏
 solvency#偿付能力
@@ -11250,6 +11534,7 @@ peddler#小贩
 homeopathic#顺势疗法
 hacienda#庄园
 jest#笑话
+subjugation#征服
 rotational#旋转
 ostrich#鸵鸟
 asthmatic#哮喘
@@ -11319,6 +11604,7 @@ vermin#害虫
 banister#栏杆
 polemical#论战性的
 requiem#安魂曲
+persuasively#令人信服地
 zigzag#之字形
 asterisk#星号
 coda#结尾
@@ -11346,6 +11632,7 @@ lurk#潜伏
 hubbub#尘嚣
 impair#妨害
 politic#政治
+condiments#调味品
 dispensation#豁免
 unclean#不洁
 orator#演说者
@@ -11359,14 +11646,17 @@ spanking#打屁股
 snoop#史努比
 incite#煽动
 lethargic#昏昏欲睡的
+discerned#辨别
 soberly#清醒地
 myopic#近视
 contaminate#污染
+southernmost#最南端
 falsehood#谬误
 censor#审查
 invert#倒置
 reliquary#圣物匣
 incrementally#逐步地
+comprehensively#全面地
 ingest#摄入
 perishable#易腐烂的
 frock#连衣裙
@@ -11377,6 +11667,7 @@ hummingbird#蜂鸟
 prehistory#史前时期
 landless#无地
 ensign#军旗
+doggedly#顽强地
 beguiling#迷人的
 nonchalant#漫不经心
 damning#令人震惊的
@@ -11433,6 +11724,7 @@ desertification#荒漠化
 doldrums#低迷期
 demolish#拆除
 self-reliant#自力更生
+appropriating#挪用
 frightful#可怕
 kidnap#绑架
 contrition#忏悔
@@ -11468,6 +11760,7 @@ discordant#不和谐的
 innovate#创新
 clinch#成交
 fiftieth#第五十
+stagecoach#驿马车
 loon#潜鸟
 concordance#经文汇编
 chalky#粉笔
@@ -11496,6 +11789,7 @@ panache#潇洒
 extricate#解脱
 epithet#别名
 rejuvenation#返老还童
+resourcefulness#足智多谋
 ladle#勺子
 barter#物物交换
 circuitous#迂回
@@ -11506,6 +11800,7 @@ finicky#挑剔的
 foolhardy#蛮干
 pliable#柔韧的
 deranged#精神错乱
+undervalued#被低估
 trinity#三位一体
 self-sacrifice#自我牺牲
 fissure#裂缝
@@ -11526,6 +11821,7 @@ taint#污点
 omniscient#无所不知
 ironclad#铁甲舰
 bigot#偏执狂
+crowbar#撬棍
 regimental#团级
 flax#亚麻
 ineptitude#无能
@@ -11534,6 +11830,7 @@ fatalism#宿命论
 paleontologist#古生物学家
 scud#飞毛腿
 tortuous#曲折
+cynically#愤世嫉俗地
 cinch#肚带
 whimper#呜咽
 high-minded#高尚的品格
@@ -11542,12 +11839,14 @@ emigrate#移民
 sociability#社交性
 sylvan#森林
 disturbingly#令人不安地
+infuriated#愤怒的
 well-informed#消息灵通
 forsaken#被遗弃的
 pollute#污染
 tipsy#微醺
 vibrate#颤动
 malady#弊病
+substantively#实质上
 colossus#巨人
 slander#诽谤
 carcinogenic#致癌物
@@ -11569,6 +11868,7 @@ plasticity#可塑性
 ebullient#热情洋溢
 splashy#华丽的
 solemnity#严肃
+enamored#爱慕
 urbane#彬彬有礼
 flabby#松弛
 erratically#不规则地
@@ -11585,6 +11885,7 @@ overstate#夸大
 ostensible#表面上的
 babble#潺潺
 cleverness#聪明才智
+indignantly#愤慨地
 testimonial#用户评价
 eminence#卓越
 locust#刺槐
@@ -11613,6 +11914,7 @@ pandemonium#混乱
 refreshment#清爽
 moldy#发霉的
 mercenary#雇佣兵
+transferable#可转让
 impartiality#公正性
 consort#配偶
 poncho#雨披
@@ -11690,6 +11992,7 @@ swank#时髦
 calvary#髑髅地
 frighteningly#令人恐惧地
 dispassionate#冷静
+unconsciousness#无意识
 indefensible#站不住脚的
 retort#反驳
 damper#阻尼器
@@ -11703,14 +12006,19 @@ anticipatory#预期
 daft#愚蠢
 filial#孝
 ontology#本体论
+laboriously#费力地
 solicitous#殷勤
 cede#放弃
 unselfish#无私
 technicality#技术性
+crazily#疯狂地
 revue#评论
 executor#遗嘱执行人
 herbicide#除草剂
+laurels#月桂树
+superseded#被取代
 stodgy#古板
+irregularly#不规则地
 disable#禁用
 emissary#使者
 reprise#重奏
@@ -11724,6 +12032,7 @@ pharmacology#药理
 loam#壤土
 germination#发芽
 vociferous#喧闹的
+furtively#偷偷摸摸
 impresario#经纪人
 uninhibited#不羁
 ornamentation#装饰
@@ -11746,11 +12055,13 @@ contrite#懊悔
 aggravation#加重
 quantifiable#可量化的
 up-front#前期
+remoteness#偏远
 unsound#不健全
 enslavement#奴役
 monstrosity#怪物
 cannibal#食人族
 bluster#虚张声势
+feuding#争吵
 accentuate#强调
 reprisal#报复
 oblong#长方形
@@ -11760,6 +12071,7 @@ stun#眩晕
 aeration#通风
 mercurial#水银
 err#犯错
+spellbound#着迷
 zany#古怪的
 quintet#五重奏
 recluse#隐士
@@ -11800,12 +12112,14 @@ foregone#已放弃
 vivacious#活泼
 hoist#提升
 hurl#投
+vicariously#间接地
 lunacy#疯狂
 ineffable#难以言喻的
 emulation#仿真
 arable#可耕地
 concurrence#一致
 transformer#变压器
+derided#嘲笑
 doting#溺爱
 noncommittal#不置可否
 subservient#顺从的
@@ -11824,8 +12138,10 @@ pithy#简洁
 semicircle#半圆
 derivation#推导
 annex#附件
+surrealist#超现实主义
 uncommitted#未承诺
 chalice#圣杯
+subcutaneous#皮下
 sledge#雪橇
 rafter#椽
 kingship#君主制
@@ -11849,11 +12165,14 @@ antagonist#反派
 banality#平庸
 armistice#停战
 quixotic#堂吉诃德式的
+successively#依次
+impeding#阻碍
 unscientific#不科学的
 apprehend#逮捕
 magnificence#壮丽
 polemic#论战
 desertion#逃兵
+superstructure#上层建筑
 shipbuilding#造船
 lipid#脂质
 hyena#鬣狗
@@ -11869,6 +12188,7 @@ cuticle#表皮
 minnow#桃花鱼
 dissect#解剖
 zeitgeist#时代精神
+vicissitudes#变迁
 airless#无气
 stupendous#惊人的
 slippage#滑移
@@ -11930,6 +12250,7 @@ petrol#汽油
 obsidian#黑曜石
 turnip#芜菁
 ewe#母羊
+vexing#令人恼火
 sidestep#回避
 amass#积累
 frisky#活泼的
@@ -11974,6 +12295,8 @@ augmentation#增强
 endocrine#内分泌
 balsam#香脂
 cloture#终止
+brazenly#明目张胆
+plodding#缓慢地
 impassable#不可逾越
 penalize#惩罚
 sacrosanct#神圣不可侵犯
@@ -11983,6 +12306,7 @@ echelon#梯队
 futurist#未来主义者
 vixen#泼妇
 chimera#奇美拉
+terrorized#恐怖
 meteoric#流星
 sable#黑貂
 husk#外壳
@@ -11992,6 +12316,7 @@ kindle#点燃
 beeline#直线
 fitfully#断断续续地
 effusive#热情洋溢
+surefire#绝对可靠
 helpfully#乐于助人
 cornucopia#丰饶角
 loathsome#令人厌恶的
@@ -12008,6 +12333,7 @@ cloying#甜腻
 poignancy#悲怆
 erudite#博学
 incredulity#怀疑
+accoutrements#配件
 ferment#发酵
 insoluble#不溶
 archivist#档案管理员
@@ -12051,6 +12377,7 @@ scurry#疾走
 gaily#兴高采烈地
 infirm#虚弱
 bristle#鬃
+bluffing#虚张声势
 kindling#引火物
 shard#碎片
 deport#遣返
@@ -12139,6 +12466,7 @@ orthogonal#正交
 steppe#草原
 amaze#惊奇
 fortify#强化
+coalesced#融合
 personalize#个性化
 detonate#起爆
 revoke#撤销
@@ -12163,6 +12491,7 @@ paleolithic#旧石器时代
 invertebrate#无脊椎动物
 iota#ι
 deviate#偏离
+dregs#渣
 confection#糖果
 institutionalize#制度化
 oligarchy#寡头政治
@@ -12200,6 +12529,7 @@ outlive#活得更久
 emaciated#瘦弱
 espouse#支持
 diverge#分歧
+garbled#混乱
 equitably#公平地
 blasphemous#亵渎神明
 equanimity#平静
@@ -12269,6 +12599,7 @@ deductive#演绎推理
 myopia#近视
 psychosomatic#心身疾病
 harpoon#鱼叉
+ardently#热切地
 wince#畏缩
 vibrancy#活力
 famished#饥饿
@@ -12278,6 +12609,7 @@ empiricism#经验主义
 synod#宗教会议
 dramatize#戏剧化
 demonstrable#可证明的
+diehard#顽固
 woozy#晕乎乎的
 amoral#无道德的
 denouement#结局
@@ -12290,6 +12622,7 @@ opportunism#机会主义
 liberator#救星
 cornice#檐口
 sonata#奏鸣曲
+disintegrating#瓦解
 defray#支付
 unassailable#无可辩驳
 slouch#伛
@@ -12344,12 +12677,14 @@ spinster#单身女子
 heretic#异教徒
 pharmacological#药理学
 centrifuge#离心机
+symmetric#对称
 laconic#简洁
 indomitable#不屈不挠
 luxuriant#茂盛的
 devastate#蹂躏
 squabble#争吵
 prowl#潜行
+hackles#哈克尔斯
 impetuous#浮躁
 maniacal#疯狂的
 surmise#推测
@@ -12363,6 +12698,7 @@ psychoanalyst#精神分析学家
 intramural#室内
 scantily#稀疏地
 necessitate#需要
+stoically#坚忍地
 disengage#脱离接触
 nastiness#令人厌恶
 seaport#海港
@@ -12393,6 +12729,7 @@ tricycle#三轮车
 cipher#密码
 apostrophe#撇号
 pretension#预张
+ruthlessness#冷酷无情
 idealist#理想主义者
 multilingual#多种语言
 hydrant#消火栓
@@ -12461,12 +12798,14 @@ lope#洛珀
 woeful#悲惨的
 scour#冲刷
 fester#溃烂
+deflated#瘪
 confiscate#没收
 idiocy#白痴
 hypodermic#皮下注射
 meritorious#有功德的
 machiavellian#马基雅维利主义者
 stutter#口吃
+arrears#欠款
 scree#碎石
 viscosity#粘度
 micron#微米
@@ -12488,6 +12827,7 @@ muskie#麝香鱼
 fancier#更精致的
 sweeten#甜味
 fluctuate#波动
+ineffectiveness#无效
 free-flowing#自由流动
 riddance#摆脱
 dimple#酒窝
@@ -12671,6 +13011,7 @@ quill#鹅毛笔
 typhoon#台风
 forceps#钳子
 matriculation#入学
+cringing#令人作呕
 frankness#坦率
 melodious#悦耳动听
 virile#阳刚的
@@ -12693,7 +13034,9 @@ reparation#赔偿
 haltingly#断断续续地
 rejuvenate#恢复活力
 lode#矿脉
+flustered#慌乱
 appetizing#令人垂涎的
+pulsating#脉动
 parentage#亲子关系
 interconnection#互连
 infallibility#绝对正确
@@ -12718,6 +13061,7 @@ remiss#疏忽
 quibble#狡辩
 exaltation#提高
 shaven#剃光
+suffocation#窒息
 doubtfully#怀疑地
 obliteration#抹杀
 sacrilege#亵渎神灵
@@ -12773,6 +13117,7 @@ glorification#荣耀
 omnipotent#无所不能
 vindicate#表白
 virility#男性活力
+timelessness#永恒
 herbaceous#草本植物
 conclave#秘密会议
 sardine#沙丁鱼
@@ -12798,6 +13143,7 @@ congratulatory#祝贺
 surreptitious#偷偷摸摸的
 unfashionable#过时的
 peddle#兜售
+suddenness#突然
 pacify#安抚
 pantomime#哑剧
 mockingly#嘲讽地
@@ -12828,6 +13174,7 @@ insignificance#微不足道
 oppressor#压迫者
 filigree#细丝
 treble#高音
+conserved#已保存
 sedition#煽动叛乱
 hedgehog#刺猬
 badger#獾
@@ -12851,6 +13198,7 @@ recuperate#疗养
 tussle#争执
 appellation#称谓
 quadruple#四倍
+underutilized#未充分利用
 full-bodied#饱满的
 unbecoming#不体面
 technologist#技术员
@@ -12860,6 +13208,7 @@ hew#槎
 monotheism#一神论
 whit#白色
 centaur#半人马
+cowed#胆怯
 inaccurately#不准确
 affectation#做作
 splurge#挥霍
@@ -12872,6 +13221,7 @@ microcomputer#微型计算机
 cad#CAD
 pasty#糊状物
 heave#举
+constricted#收缩
 fashionably#时尚地
 credibly#可信地
 endow#赋予
@@ -12970,6 +13320,7 @@ discontinuous#不连续的
 metonymy#转喻
 antagonize#对抗
 patronize#惠顾
+stiffening#刚度
 excitable#易激动的
 tangential#切线
 glimmering#微光
@@ -12991,6 +13342,7 @@ forsake#背叛
 diaphanous#透明的
 vestigial#残余的
 fete#宴请
+hinterlands#内陆地区
 automate#自动化
 exonerate#开脱
 halve#一半
@@ -13000,6 +13352,7 @@ recombinant#重组
 limerick#五行打油诗
 eschew#避免
 quip#讽刺
+dislodged#脱落
 irrationally#非理性地
 filmy#电影
 exude#渗出物
@@ -13016,6 +13369,7 @@ lithograph#石版画
 aureole#光环
 cajole#哄骗
 afresh#重新
+rudiments#基本原理
 embellish#润
 deplore#遗憾
 annihilate#歼灭
@@ -13030,6 +13384,7 @@ autocracy#专制
 scythe#镰
 wrangler#牧马人
 actuary#精算师
+dyslexic#阅读障碍
 imposter#冒名顶替者
 fascia#筋膜
 permeate#渗透
@@ -13055,12 +13410,14 @@ unpopularity#不受欢迎
 scalding#烫
 risque#有风险的
 pique#激起
+comprehended#理解
 claustrophobia#幽闭恐惧症
 condense#凝结
 remodel#改造
 postscript#后记
 flaccid#松弛
 humanize#人性化
+selflessness#无私
 chaff#糠
 irregularity#不规则
 amenity#便利设施
@@ -13136,6 +13493,7 @@ scrumptious#美味的
 allude#暗示
 dumbly#默默地
 retard#减速
+homesickness#思乡之情
 downwards#向下
 swum#游泳
 rifling#膛线
@@ -13158,6 +13516,7 @@ enumeration#枚举
 effusion#渗出液
 gush#喷薄
 firebrand#火炬手
+swiftness#速度
 surmount#超越
 covet#贪图
 logjam#堵塞
@@ -13182,6 +13541,7 @@ tricolor#三色
 caprice#任性
 fantasia#幻想曲
 analgesic#镇痛药
+sublimation#升华
 well-groomed#仪容整洁
 defraud#骗取
 paean#颂歌
@@ -13236,6 +13596,7 @@ freshen#清新
 interloper#闯入者
 peripatetic#四处游荡的
 foreclose#取消抵押赎回权
+attenuated#减弱
 aphorism#格言
 discoverer#发现者
 braiding#编织
@@ -13257,6 +13618,7 @@ boudoir#闺房
 orifice#孔
 theatricality#戏剧性
 linearity#线性
+calipers#卡尺
 harpsichord#羽管键琴
 miter#斜接
 stoke#中风
@@ -13276,6 +13638,7 @@ laminate#层压板
 concoct#编造
 detest#厌恶
 gaiety#欢乐
+resettle#重新安置
 rococo#洛可可
 vagabond#流浪汉
 punctuality#准时性
@@ -13316,9 +13679,11 @@ amity#和睦
 tuber#块茎
 tusk#象牙
 squelch#静音
+enmeshed#纠缠不清
 happy-go-lucky#乐天派
 statuesque#雕像般的
 temerity#鲁莽
+self-righteousness#自以为是
 denigration#贬低
 sociopath#反社会人格
 hackneyed#老套的
@@ -13339,6 +13704,7 @@ clothe#衣服
 absolve#开脱
 disobedient#忤
 zoologist#动物学家
+statesmanship#政治家风范
 misogynist#厌女者
 pestle#杵
 telepathy#心灵感应
@@ -13369,6 +13735,7 @@ surfeit#过量
 thereabouts#大约
 irreversibly#不可逆转地
 skew#倾斜
+nonplussed#不知所措
 fearlessness#无畏
 problematical#有问题的
 succor#救助
@@ -13388,6 +13755,7 @@ dint#凹痕
 dullness#乏味
 parse#解析
 exterminate#殄
+backwaters#偏远地区
 optically#光学
 litigate#诉讼
 histology#组织学
@@ -13395,6 +13763,7 @@ amelioration#改善
 slough#泥沼
 cyan#青色
 adroit#灵巧
+tantalizingly#令人垂涎地
 convivial#欢快的
 broach#拉钩
 prideful#骄傲的
@@ -13450,11 +13819,13 @@ vaccinate#接种疫苗
 fibre#纤维
 sepsis#败血症
 reminisce#回忆
+adroitly#巧妙地
 supersede#取代
 afflict#折磨
 inconsolable#无法安慰
 inexact#不精确
 nether#下
+peacefulness#宁静
 mumble#咕哝
 fecund#多产的
 insolence#傲慢
@@ -13462,10 +13833,12 @@ despot#暴君
 clipper#快艇
 falsification#伪造
 eclecticism#折衷主义
+incompleteness#不完整
 acolyte#侍僧
 sphinx#狮身人面像
 leeward#背风面
 daguerreotype#达盖尔银版摄影法
+contortions#扭曲
 irreparably#不可挽回地
 indolent#懒惰的
 elegiac#挽歌
@@ -13498,6 +13871,7 @@ precession#进动
 pugnacious#好斗的
 rancorous#怨恨的
 crestfallen#垂头丧气
+idolized#偶像化
 piquant#辛辣的
 cordially#诚挚地
 unfailing#不失败的
@@ -13514,6 +13888,7 @@ tectonics#构造运动
 synoptic#综合
 bandy#班迪
 tenable#站得住脚的
+straightforwardly#直截了当地
 narrow-minded#思想狭隘
 pedantic#迂腐的
 belligerence#好战
@@ -13538,6 +13913,7 @@ onlooker#旁观者
 reaper#死神
 deportment#仪态
 marionette#木偶
+crosswalk#人行横道
 splint#夹板
 codification#编纂
 lampoon#讽刺
@@ -13548,6 +13924,7 @@ ignominious#可耻
 languish#憔悴
 duplicitous#两面派
 taciturn#沉默寡言
+extrapolated#推断
 disrepute#名誉受损
 lingua#语言
 adjudicate#裁定
@@ -13652,6 +14029,7 @@ batten#板条
 ethnology#民族学
 instigator#煽动者
 peerless#无与伦比
+appeasing#安抚
 maneuverable#机动性强
 contrivance#装置
 disquiet#忧虑
@@ -13659,6 +14037,7 @@ hypersensitive#过敏
 pauper#穷光蛋
 sulky#闷闷不乐的
 privation#匮乏
+superficiality#肤浅
 potentiality#潜力
 accursed#被诅咒的
 heckler#起哄者
@@ -13667,6 +14046,7 @@ rummage#临检
 officious#爱管闲事的
 recessionary#衰退
 wag#摇摆
+smugness#自鸣
 replenishment#补给
 immigrate#移民
 vale#谷
@@ -13705,6 +14085,7 @@ showpiece#展品
 politicize#政治化
 estimable#可估量的
 thrash#鞭挞
+viciousness#恶毒
 decorous#得体
 gadfly#虻
 protrude#突出
@@ -13719,12 +14100,14 @@ betrothal#订婚
 lyre#竖琴
 exorcise#傩
 flighty#轻浮
+sluggishly#迟缓地
 chauvinistic#沙文主义
 demean#贬低
 infirmity#虚弱
 miasma#瘴气
 percussionist#打击乐手
 usurpation#篡位
+carbonated#碳酸饮料
 unbelief#不信
 toga#长袍
 stenographer#速记员
@@ -13761,6 +14144,7 @@ fretful#烦躁
 liveliness#活力
 functionary#官员
 sinew#腱子
+steadfastness#坚定不移
 separable#可分离
 omnipotence#全能
 restatement#重述
@@ -13808,6 +14192,7 @@ slovenly#邋遢的
 disdainfully#轻蔑地
 debunk#揭穿
 mollify#缓和
+scads#大量
 feign#假装
 ignoble#卑鄙的
 trivialize#轻描淡写
@@ -13842,6 +14227,7 @@ dally#玩弄
 atavistic#返祖现象
 conformist#循规蹈矩者
 miser#吝啬鬼
+permissiveness#宽容
 philistine#庸俗
 jinx#厄运
 opalescent#乳白色
@@ -13858,6 +14244,7 @@ ribald#粗俗的
 immodest#不雅的
 impudent#厚颜无耻
 preserver#保护者
+symmetrically#对称地
 unchangeable#不可改变的
 senility#老年痴呆症
 freelancer#自由职业者
@@ -13913,6 +14300,7 @@ micrometer#千分尺
 prowler#潜行者
 octagon#八边形
 gloat#幸灾乐祸
+fawning#谄媚
 hobble#跛行
 boorish#粗野
 obstinacy#固执
@@ -13923,6 +14311,7 @@ proscenium#舞台口
 softener#柔软剂
 clapper#拍板
 subsidence#地面沉降
+convertibility#可转换性
 grumble#叽
 loquacious#贫嘴
 belittling#贬低
@@ -13933,6 +14322,7 @@ memorialize#纪念
 convulsion#抽搐
 malign#诽谤
 lamentation#哀叹
+mutated#变异
 deserter#逃兵
 humanitarianism#人道主义
 podiatrist#足科医生
@@ -14008,6 +14398,7 @@ sadist#虐待狂
 epistle#书信
 kinsman#亲属
 coven#女巫集会
+bifurcated#分叉的
 proneness#倾向
 devastatingly#毁灭性的
 languorous#慵懒的
@@ -14029,16 +14420,19 @@ presupposition#前提
 parenthesis#插入语
 ferrous#亚铁
 lactate#乳酸
+imprisoning#监禁
 youngish#年轻气盛的
 turgid#膨胀的
 stratagem#策略
 reproachful#责备的
+shallowness#浅
 loiter#游荡
 semiannual#半年
 magnanimity#海量
 putsch#政变
 feudalism#封建
 woodpile#木柴堆
+stigmata#圣痕
 egress#出口
 depopulation#人口减少
 inopportune#不合时宜
@@ -14052,12 +14446,15 @@ mortification#屈辱
 correlative#相关性
 puritanism#清教主义
 inbound#入站
+decoded#已解码
 penitent#忏悔者
 bier#柩
 divestiture#资产剥离
 irksome#烦人的
 endear#心爱的
 shirk#推脱
+daunted#畏惧
+addled#糊涂的
 bafflement#困惑
 disfavor#不受欢迎
 unexceptional#平淡无奇
@@ -14083,6 +14480,7 @@ agitate#激荡
 goad#刺激
 inoffensive#无害的
 portend#预兆
+enthralling#引人入胜
 seamy#卑鄙的
 inoculate#接种
 tangent#切线
@@ -14139,6 +14537,7 @@ insouciance#漫不经心
 pebbly#卵石状
 dalliance#调戏
 formalize#正式化
+conniving#阴险狡诈
 vanquish#征服
 abdicate#放弃
 rimless#无框
@@ -14158,6 +14557,8 @@ cryptically#神秘地
 chicanery#强辩
 typify#类型化
 bric-a-brac#小摆设
+reciprocated#互惠
+cunningly#狡猾地
 digestible#可消化
 engrossing#引人入胜
 disbursement#支出
@@ -14236,6 +14637,7 @@ compatriot#同胞
 misrepresent#歪曲
 misadventure#不幸遭遇
 gratis#免费
+vaporized#汽化
 shiftless#无所事事
 indolence#懒惰
 credulous#轻信的
@@ -14274,6 +14676,7 @@ irretrievable#无法挽回的
 admonish#谏
 indiscreet#轻率
 abeyance#中止
+persuasiveness#说服力
 histrionic#戏剧化的
 mutinous#叛逆的
 disparagement#贬损
@@ -14326,6 +14729,7 @@ assiduous#刻苦
 pathologically#病理学上
 imperil#威胁
 snobbish#势利
+refracted#折射
 pulpy#稀烂
 rebuff#回绝
 encroach#侵犯
@@ -14341,6 +14745,7 @@ satiety#饱腹感
 ruffian#痞子
 outstrip#超过
 inestimable#不可估量
+enticements#诱惑
 haughtily#傲慢地
 understate#低调
 footstep#脚步
@@ -14368,12 +14773,14 @@ resistive#电阻
 lingual#语言
 mellifluous#悦耳动听
 transpire#发散
+circumvented#规避
 maim#残害
 adieu#再见
 multifarious#五花八门
 gusher#喷涌而出的
 propagandist#宣传工作者
 queasiness#恶心
+introverted#内向
 cherub#小天使
 prophesy#预言
 exchequer#国库
@@ -14431,9 +14838,11 @@ sharpener#削笔器
 defamatory#诽谤
 ethnological#民族学
 utilitarianism#功利主义
+copiously#大量
 ignominy#耻辱
 chide#喝叱
 invigorate#使精神焕发
+invigorated#精神焕发
 laggard#落后者
 encapsulate#封装
 enumerate#枚举
@@ -14454,6 +14863,7 @@ metrical#度量
 caisson#藻井
 obtrusive#碍眼的
 shrivel#萎缩
+star-crossed#命运多舛
 gab#瞎扯
 foretell#预言
 fusillade#齐射
@@ -14464,6 +14874,7 @@ quarrelsome#爱争吵的
 prickle#刺
 unimpeachable#无可指摘
 glower#怒视
+rebelliousness#叛逆
 colloquy#对话
 contravention#违规
 granary#粮仓
@@ -14520,6 +14931,7 @@ untutored#未经训练的
 diffidence#羞怯
 imbue#赋予
 forgivable#可原谅的
+inefficiently#效率低下
 underling#下属
 inviolate#不可侵犯
 subsume#包含
@@ -14535,6 +14947,7 @@ girder#梁
 exhumation#开棺验尸
 chafe#摩擦
 malodorous#恶臭的
+spendthrift#败家子
 impugn#抨击
 attenuate#衰减
 suckling#乳
@@ -14583,6 +14996,7 @@ laryngitis#喉炎
 twit#推特
 comedienne#喜剧演员
 oracular#神谕
+submissiveness#顺从
 instrumentalist#乐器演奏家
 conditionally#有条件地
 proffer#报价
@@ -14596,6 +15010,7 @@ lordly#尊贵的
 well-bred#出身良好的
 grandiosity#宏伟
 conviviality#欢乐
+destabilized#不稳定
 provable#可证明的
 introvert#内向者
 schematically#示意图
@@ -14655,12 +15070,14 @@ motorway#高速公路
 eugenic#优生学
 cacophonous#刺耳的
 jocular#诙谐
+blandishments#奉承
 redoubtable#令人敬畏的
 stanch#立柱
 decimation#大屠杀
 disinclination#不情愿
 delude#妄想
 incarcerate#监禁
+sorrowfully#悲伤地
 oaf#笨蛋
 repugnance#厌恶
 procreate#生育
@@ -14729,6 +15146,7 @@ underpin#支撑
 erotically#色情地
 censorious#审查的
 insincerity#虚伪
+edifying#有益的
 beardless#无胡须
 exhibitionist#暴露狂
 blotch#斑点
@@ -14736,6 +15154,7 @@ epicurean#美食家
 pecuniary#金钱
 croon#轻哼
 ethnologist#民族学家
+stowaway#偷渡者
 monasticism#修道主义
 tutelary#保护
 legato#连奏
@@ -14748,6 +15167,7 @@ insuperable#不可逾越
 hardheaded#固执
 imperturbable#沉着冷静
 buzz#嗡嗡声
+flouting#藐视
 bide#比德
 deign#设计
 unschooled#未受过教育
@@ -14772,9 +15192,11 @@ necropolis#墓地
 disbarment#取消律师资格
 decimate#消灭
 rile#笑
+indecisiveness#优柔寡断
 suppleness#供应
 reproachfully#责备地
 gristle#脆骨
+standoffish#冷漠
 carping#鲤鱼
 hidebound#隐匿
 reenact#重演
@@ -14805,6 +15227,7 @@ indigestible#难以消化的
 bonhomie#和睦
 undergird#下部支撑
 catastrophically#灾难性的
+shortsightedness#短视
 disparagingly#轻蔑地
 abruptness#突兀
 gullibility#轻信
@@ -14816,6 +15239,7 @@ juxtapose#并置
 provincialism#地方主义
 impersonate#模仿
 valedictory#告别词
+extenuating#减轻
 scuff#磨损
 exhume#发掘
 menthol#薄荷醇
@@ -14912,6 +15336,7 @@ rehash#重述
 galvanic#电化学
 improbability#概率低
 licence#执照
+authenticated#已验证
 od#od
 teat#乳头
 choreographic#编舞
@@ -14922,10 +15347,13 @@ investiture#授职
 twee#彧
 bulldoze#推土机
 invariable#不变的
+statesmanlike#政治家风范
 ravage#蹂躏
 slink#潜行
 wrangle#争吵
+bantering#玩笑
 petulance#性急
+substantiation#证实
 deaden#缓和
 cognizance#认知
 technocrat#技术官僚
@@ -14935,6 +15363,7 @@ mannerism#举止
 proscription#禁令
 hove#霍夫
 handcuff#手铐
+willfulness#任性
 agnosticism#不可知论
 conventionality#惯例
 decrepitude#衰老
@@ -14975,6 +15404,7 @@ incivility#非礼
 rookery#乌鸦巢
 pentameter#五音步
 sensitization#致敏
+obliviousness#浑然不觉
 percolate#过滤
 vivacity#活泼
 astonish#震惊
@@ -14982,6 +15412,7 @@ piddling#小打小闹
 believability#可信度
 pillage#掠夺
 dizzyingly#令人眼花缭乱
+extroverted#外向
 bequeath#遗赠
 socialistic#社会主义
 undoubted#毫无疑问
@@ -14991,6 +15422,7 @@ extrovert#外向型
 fulfil#实现
 eyeless#无眼
 graven#雕刻
+legitimated#合法化
 emanation#散发
 bibliographical#书目
 awl#锥子
@@ -15010,12 +15442,14 @@ misanthropic#厌世的
 doggerel#打油诗
 impudence#厚颜无耻
 commonsensical#常识
+stuntman#特技演员
 unarticulated#未表达的
 serially#连续
 silversmith#银匠
 fop#纨绔子弟
 soothsayer#预言家
 facially#面部
+inured#受伤
 interminably#无休止地
 deride#嘲笑
 ebullience#沸腾
@@ -15050,6 +15484,7 @@ hard-bitten#顽固的
 obstreperous#喧闹的
 somnolent#嗜睡
 admonishment#警告
+sturdiness#坚固性
 coddle#溺爱
 flout#蔑视
 misinterpret#曲解
@@ -15076,6 +15511,7 @@ moodiness#情绪波动
 vilify#丑化
 confusingly#令人困惑地
 inseparably#密不可分
+industriousness#勤奋
 overtone#泛音
 hydraulically#水力
 pincer#钳子
@@ -15100,7 +15536,9 @@ consign#交付
 ogle#眄
 penury#贫困
 permutation#排列
+self-evidently#显而易见
 indelicate#不雅
+stolidly#沉稳地
 pester#纠缠
 megalomaniac#狂妄自大者
 ceremonially#仪式性地
@@ -15113,6 +15551,7 @@ scintilla#闪光
 tailwind#顺风
 friable#易碎的
 spoor#痕迹
+oxidized#氧化
 oratorio#清唱剧
 precocity#早熟
 prudish#拘谨
@@ -15147,6 +15586,7 @@ ligature#结扎
 grumpily#闷闷不乐地
 anticlimax#虎头蛇尾
 genuineness#真实性
+starless#无星
 uproarious#哄然
 hankering#渴望
 fondle#挲
@@ -15174,12 +15614,14 @@ bespeak#表明
 saunter#溜达
 regale#款待
 drizzly#蒙蒙
+curmudgeonly#脾气古怪的
 knowledgeably#知识渊博
 enrage#激怒
 impolitic#不合时宜
 leaderless#无领导
 belabor#劳动
 disallow#禁止
+victuals#食物
 demoralize#打击士气
 docility#码头
 suasion#劝说
@@ -15197,6 +15639,8 @@ troth#誓言
 amateurism#业余主义
 vagrancy#流浪
 cudgel#棍棒
+subsidization#补贴
+amalgamated#合并
 gustatory#味觉
 freckle#雀斑
 parley#谈判
@@ -15217,6 +15661,7 @@ contrive#精心策划
 sulk#闷闷不乐
 shopworn#破旧的
 connivance#共谋
+wholesomeness#健康
 rivulet#溪流
 fungible#可互换的
 indisposed#不适
@@ -15257,6 +15702,7 @@ mendacious#虚伪的
 reportorial#报告
 emancipate#解放
 greenhorn#菜鸟
+mystically#神秘地
 congeniality#亲和力
 swill#泔水
 extrajudicial#法外
@@ -15335,6 +15781,7 @@ philanderer#花花公子
 ineluctably#不可避免的
 laud#赞美
 disconcerted#不安
+superimpose#叠加
 affably#和蔼可亲
 capably#能够
 cohere#凝聚力
@@ -15347,6 +15794,7 @@ outrigger#舷外支架
 effectual#有效的
 piteous#可怜的
 gourmand#美食家
+pleasantness#愉悦
 salesclerk#销售业务员
 sprocket#链轮
 provident#普罗维登特
@@ -15394,6 +15842,7 @@ slothful#懒惰
 smolder#闷烧
 libidinous#好色的
 exhort#劝勉
+trespasser#擅闯者
 victimize#受害
 derangement#精神错乱
 tithe#什一奉献
@@ -15432,6 +15881,7 @@ ewer#水罐
 sifter#筛子
 sebaceous#皮脂
 soporific#催眠剂
+sturdily#坚固地
 plod#缓慢行进
 hatless#无帽
 belligerently#好战地
@@ -15445,6 +15895,7 @@ elapse#流逝
 stoical#斯多葛派
 moistness#湿度
 tradesman#零售商
+receptiveness#接受能力
 incorporeal#无形的
 whorl#螺纹
 phylum#门
@@ -15452,6 +15903,7 @@ aborigine#土著
 nought#零
 lodger#房客
 verity#真理
+relenting#让步
 presage#预示
 slacken#放松
 consecrate#供奉
@@ -15477,9 +15929,11 @@ chomp#咀嚼
 hexagon#六边形
 calumny#诽谤
 unicellular#单细胞
+cuttlefish#乌贼
 trapezium#梯形
 cetacean#鲸类
 naphtha#石脑油
+apostrophes#撇号
 posy#铭文
 mistrustful#不信任
 irredeemably#无可挽回地
@@ -15488,6 +15942,7 @@ tactless#不顾及他人感受
 atypically#非典型
 execrable#可憎的
 hustings#竞选
+spasmodically#间歇性地
 ruminate#寻味
 babyish#幼稚
 nonentity#非实体
@@ -15496,6 +15951,7 @@ buffoonery#滑稽
 searchingly#仔细地
 dross#浮渣
 whinny#嘶鸣
+supernaturally#超自然地
 dotage#溺爱
 procrastinate#拖延
 igneous#火成岩
@@ -15527,6 +15983,7 @@ bureaucratically#官僚主义地
 enshrine#供奉
 apoplexy#中风
 obverse#正面
+stuffiness#鼻塞
 nectarine#油桃
 baize#台布
 crepuscular#暮光
@@ -15598,6 +16055,7 @@ remonstrance#抗议
 denotative#指称性的
 impersonally#不带个人色彩的
 ineffectually#无效地
+nitpicking#吹毛求疵
 assail#攻击
 loll#哈哈
 timorous#胆怯的
@@ -15611,6 +16069,7 @@ witticism#妙语
 coterminous#同界
 mendacity#谎言
 promptness#迅速
+sternness#严厉
 cogency#说服力
 imponderable#难以估量
 preponderant#占优势
@@ -15665,6 +16124,7 @@ overreach#过度扩张
 loftily#傲慢地
 indiscernible#无法辨认的
 rigmarole#繁文缛节
+stonily#冷漠地
 tidily#整齐地
 elongate#拉长
 mutilate#残害
@@ -15677,6 +16137,7 @@ beseech#恳求
 putrefaction#腐败
 seemly#似乎
 taxidermy#动物标本剥制术
+quenched#淬火
 whetstone#磨石
 gastritis#胃炎
 solubility#溶解度
@@ -15685,10 +16146,12 @@ bashfully#害羞地
 castigate#鞭挞
 nuzzle#蹭蹭
 risible#可笑的
+craftily#巧妙地
 inconceivably#难以想象
 nastily#令人厌恶地
 incontestable#无可争议的
 amiability#和蔼
+listlessness#倦怠
 preconception#偏见
 unstinting#毫不吝啬
 perspire#出汗
@@ -15696,8 +16159,11 @@ outre#外部
 congratulation#恭喜
 encumbrance#累赘
 poseur#摆姿势
+lineaments#线状线
 immortalize#永垂不朽
 persnickety#挑剔的
+combativeness#好斗性
+purposefulness#目的性
 dehumanize#非人化
 elope#私奔
 impermanent#短暂的
@@ -15709,6 +16175,7 @@ tatty#破旧的
 hedonist#享乐主义者
 synthetically#合成
 dependant#依赖
+ironworks#铁厂
 transpose#转置
 liniment#擦剂
 transgressor#违规者
@@ -15760,6 +16227,7 @@ bludgeon#棍棒
 obfuscate#混淆
 poky#慢吞吞
 capriciousness#反复无常
+straightforwardness#直率
 impel#促使
 antediluvian#洪水前的
 legerdemain#戏法
@@ -15795,6 +16263,7 @@ curdle#凝固
 verbose#冗长
 unreserved#毫无保留
 egotist#自负
+affronted#受辱
 polemicist#辩论家
 oxidize#氧化
 nonskid#防滑
@@ -15811,6 +16280,7 @@ octavo#八开本
 imagism#意象主义
 resolvable#可解决
 simpleminded#头脑简单
+staticky#静电
 translatable#可翻译的
 repercussion#后果
 translucence#半透明
@@ -15826,6 +16296,7 @@ contravene#违反
 eightieth#八十
 bole#树干
 irremediable#无法补救
+pretentiousness#矫揉造作
 treacle#糖浆
 incommunicado#失联
 protoplasm#原生质
@@ -15870,6 +16341,7 @@ horrifically#极其可怕
 perspicacious#敏锐的
 remunerative#有报酬的
 angularity#角度
+fatiguing#令人疲惫的
 irredeemable#不可挽回的
 avowal#承认
 onrush#匆忙
@@ -15909,6 +16381,8 @@ brittleness#脆性
 indispensability#不可或缺性
 opine#意见
 haughtiness#傲气
+occluded#闭塞
+indented#缩进
 bicameral#两院制
 libertine#放荡不羁的
 inconstancy#反复无常
@@ -15963,6 +16437,7 @@ ceremonious#隆重
 meretricious#虚伪的
 deviousness#狡猾
 potboiler#通俗小说
+stridency#刺耳
 astound#震惊
 contort#扭曲
 mete#测量
@@ -15983,6 +16458,7 @@ ecclesiastic#牧师
 inessential#无关紧要的
 debilitation#衰弱
 tightwad#吝啬鬼
+unfaithfulness#不忠
 embroider#绣
 genealogist#系谱学家
 effacement#抹杀
@@ -16008,9 +16484,12 @@ delimit#划界
 horrify#惊吓
 exigent#紧急
 contortion#扭曲
+solidification#凝固
 persecutor#迫害者
+secretiveness#秘密
 upholsterer#室内装潢师
 inconstant#不稳定
+superimposition#叠加
 cyclically#周期性地
 communistic#共产主义
 jeremiad#哀歌
@@ -16031,6 +16510,7 @@ irresolute#徊
 plainspoken#直言不讳
 condescend#屈尊
 sightsee#观光
+sullenness#阴郁
 cavort#嬉戏
 dissemble#掩饰
 meagre#微薄
@@ -16048,9 +16528,11 @@ efflorescence#风化
 turpitude#腐败
 castrate#阉割
 mooch#蹭吃蹭喝
+subornation#收买
 eccentrically#古怪地
 precis#概要
 incubus#梦魇
+restiveness#躁动不安
 adulterated#掺假的
 conjurer#魔术师
 maternally#母性
@@ -16065,8 +16547,10 @@ relict#遗迹
 fluvial#河流
 pestilential#瘟疫
 aptness#恰当性
+surliness#暴躁
 impecunious#贫困的
 floodgate#闸
+appurtenances#附属物
 horrifyingly#令人毛骨悚然
 hearken#倾听
 apprise#通知
@@ -16089,6 +16573,7 @@ abracadabra#胡言乱语
 laundress#洗衣妇
 accentuation#重音
 recidivist#累犯
+slipperiness#滑溜溜的
 prurience#好色
 satiation#饱腹感
 schismatic#分裂的
@@ -16111,6 +16596,7 @@ decapitate#杀头
 immutability#不变性
 evilly#邪恶地
 collude#串通
+purposively#有目的地
 externalize#外部化
 encomium#赞誉
 pedagogue#教育家
@@ -16154,6 +16640,7 @@ matriculate#录取
 diabolic#魔鬼般的
 philistinism#庸俗主义
 somnolence#嗜睡
+sulkily#闷闷不乐
 decontaminate#去污
 ejaculate#射精
 asperity#粗糙度
@@ -16166,6 +16653,7 @@ woodcutter#樵夫
 atomizer#喷雾器
 retouch#修图
 imposture#骗局
+spiritedness#精神
 sublingual#舌下含服
 bilateralism#双边主义
 glazier#玻璃工
@@ -16174,6 +16662,7 @@ speckle#斑点
 bacchanal#酒神节
 encumber#负担
 martinet#严酷
+soulfully#深情地
 guzzle#咕噜
 luxuriate#奢侈
 lapidary#宝石加工
@@ -16211,6 +16700,7 @@ dulcet#甜美
 mange#疥癣
 hypocritically#假惺惺
 problematically#有问题的
+disentangled#解开
 misjudge#误判
 iniquitous#不义的
 eeriness#怪诞
@@ -16263,6 +16753,7 @@ ascertainable#可确定的
 retentive#保留
 disinterestedness#无私
 tranquilly#平静地
+abraded#磨损
 pugnacity#好斗
 ecumenically#普世
 diadem#冠冕
@@ -16273,6 +16764,7 @@ hypnotism#催眠术
 therefor#因此
 sensorium#感官
 fluorine#氟
+susceptibilities#易感性
 vaporizer#雾化器
 nipper#尼珀
 moiety#部分
@@ -16310,6 +16802,7 @@ photometer#光度计
 motile#可移动的
 assonance#谐音
 succubus#魅魔
+suggestibility#易受暗示性
 coagulant#凝血剂
 consanguineous#近亲
 planisphere#星盘
@@ -16334,12 +16827,14 @@ chary#谨慎
 doddering#老态龙钟
 lissome#轻盈
 chortle#咯咯笑
+uprightness#正直
 gainsay#否定
 plagiarize#抄袭
 boor#莽汉
 coquette#卖弄风情的人
 lumpish#笨重的
 fraudulence#欺诈
+impetuously#冲动地
 neigh#嘶
 atavism#返祖现象
 naysayer#反对者
@@ -16417,6 +16912,7 @@ antlered#有角的
 odoriferous#有气味的
 gibe#嘲笑
 munificence#慷慨
+insolently#傲慢地
 topographically#地形学上
 remonstrate#抗议
 scald#烫伤
@@ -16427,6 +16923,7 @@ rapacity#贪婪
 adorably#可爱地
 mystify#故弄玄虚
 implausibility#不合情理
+oddments#零碎物件
 adjoin#毗
 impetuosity#冲动
 nosegay#花束
@@ -16485,6 +16982,7 @@ pantheist#泛神论者
 disyllabic#双音节
 abstemious#节制的
 indecorous#不得体
+straitened#拮据
 demur#异议
 despoil#掠夺
 impale#刺穿
@@ -16498,6 +16996,7 @@ redound#雷多恩
 fatalist#宿命论者
 vivisection#活体解剖
 liturgically#礼仪上的
+conventionalized#常规化
 luxuriance#奢华
 trainload#满载火车
 effeminacy#阴柔气质
@@ -16508,6 +17007,7 @@ ionize#电离
 piebald#花斑
 distillate#馏出物
 pulsate#搏动
+absentmindedness#心不在焉
 declamation#朗诵
 alterable#可变的
 hypochondriacal#疑病症
@@ -16518,11 +17018,14 @@ tableland#台地
 involution#内卷
 lounger#躺椅
 practicability#实用性
+gratuitousness#无偿
 reck#雷克
 hornless#无角
+surmountable#可克服的
 undrinkable#不能喝
 ninetieth#第九十
 grogginess#醉
+obsequiousness#谄媚
 hazily#朦胧地
 incorrigibly#无可救药地
 inexcusably#不可原谅地
@@ -16533,6 +17036,7 @@ sanguinary#血腥
 captaincy#队长
 hanger-on#挂着的
 hesitance#犹豫
+sourpuss#臭脸
 desultorily#漫不经心地
 elliptically#椭圆
 proverbially#俗语
@@ -16542,6 +17046,7 @@ frigidity#冷漠
 oilskin#油布
 postulation#假设
 retrogression#退化
+jesting#开玩笑
 unwonted#不寻常的
 accoutrement#配饰
 aspersion#诽谤
@@ -16567,6 +17072,7 @@ muzzy#模糊
 premonitory#预兆
 unhesitating#毫不犹豫
 dilapidation#破败
+immodestly#轻佻地
 prosaically#平淡地
 unconscionably#丧尽天良
 preliterate#文字出现之前的
@@ -16598,6 +17104,8 @@ unction#功能
 unkindness#不友善
 dietetics#营养学
 ennoble#使高贵
+heedlessness#粗心大意
+syntactically#句法上
 bardic#吟游诗人
 occident#欧美
 bulrush#芦苇
@@ -16615,6 +17123,7 @@ delectably#令人愉悦地
 myopically#近视
 daunt#吓住
 priggish#伪善
+heartiness#热情
 skinflint#吝啬鬼
 tackiness#粘腻
 idealistically#理想主义地
@@ -16637,6 +17146,7 @@ sackful#一袋
 cohabit#同居
 liveable#宜居
 sapient#有智慧的
+sportsmanlike#体育精神
 landholder#土地所有者
 pictograph#象形文字
 saturnalia#农神节
@@ -16645,14 +17155,17 @@ ichthyologist#鱼类学家
 commissariat#粮食
 apposition#同位语
 perfumery#香水
+stutterer#口吃者
 maladroit#笨拙
 profitless#无利可图
 suborn#受奴役
 castigation#惩罚
+healthfulness#健康
 jocularity#滑稽
 ineffably#难以言喻地
 lethargically#昏昏欲睡地
 betide#贝特迪
+discomfited#不安
 append#附加
 bilk#诈骗
 convulse#抽搐
@@ -16675,6 +17188,7 @@ demonstratively#明显地
 insatiably#贪得无厌
 slangy#俚语
 abnegation#放弃
+snobbishness#势利眼
 connubial#已婚
 miniaturist#微缩模型师
 amatory#爱慕
@@ -16704,6 +17218,7 @@ blasphemer#亵渎者
 collation#整理
 feebleness#虚弱
 flippancy#轻浮
+massiveness#巨大
 cagily#谨慎地
 enjoyably#愉快地
 huffily#气呼呼地
@@ -16727,6 +17242,7 @@ accredit#认证
 saturnine#土星
 cantonment#驻扎
 sinecure#闲职
+opaqueness#不透明性
 submergence#淹没
 disembarkation#下船
 tipple#小酌
@@ -16748,6 +17264,7 @@ extirpate#根除
 incommensurate#不相称的
 unfeigned#慥
 glassful#满杯
+graininess#颗粒感
 verbosity#冗长
 hospitably#热情好客
 reprovingly#责备地
@@ -16780,6 +17297,8 @@ cosmogony#宇宙起源论
 diphthong#双元音
 sherd#陶片
 shipwright#造船工
+symbioses#共生
+enervated#虚弱
 abstractness#抽象性
 burgeon#发芽
 foible#怪癖
@@ -16787,6 +17306,7 @@ foolhardiness#鲁莽
 piquancy#辣味
 sycophant#马屁精
 neurotically#神经质地
+unstintingly#毫不吝啬
 volubly#滔滔不绝
 besiege#围攻
 embroil#纠缠
@@ -16801,6 +17321,7 @@ gesticulation#手势
 insurgence#谋叛
 meticulousness#一丝不苟
 mischance#灾难
+stickpin#别针
 yokel#乡巴佬
 youthfully#青春洋溢
 intersperse#穿插
@@ -16814,6 +17335,7 @@ insensibly#无意识地
 impassible#恝
 regnant#统治者
 antonym#反义词
+counterpoise#平衡
 pharisee#法利赛人
 troglodyte#穴居人
 annotate#注释
@@ -16917,6 +17439,7 @@ cauterize#灸
 conciliate#和解
 puissant#强大的
 balderdash#梦呓
+nippers#钳子
 transcendentally#超验地
 aerate#通气
 granule#颗粒
@@ -16932,6 +17455,7 @@ packability#可包装性
 betimes#早点
 valour#勇气
 diacritical#变音符号
+talkativeness#健谈
 eaglet#雏鹰
 aerostat#系留气球
 adulatory#奉承
@@ -16947,12 +17471,14 @@ uncharitably#不友善地
 unhealthily#不健康的
 entwine#缠绕
 gyrate#旋转
+digressing#跑题了
 exasperate#恶化
 refract#折射
 delusive#虚幻的
 clangor#铿锵
 demesne#领地
 inroad#侵入
+unattractiveness#缺乏吸引力
 valediction#告别
 sketchily#粗略地
 prefigure#预示
@@ -16966,6 +17492,7 @@ mountebank#骗子
 pamphleteer#小册子作者
 provender#饲料
 sightseer#观光客
+spinsterhood#独身
 inflexibly#僵硬
 gild#镀金
 grammarian#语法学家
@@ -16988,7 +17515,10 @@ jilt#被抛弃
 waggish#滑稽的
 circumlocution#迂回表达
 dullard#笨蛋
+imperiousness#专横跋扈
+miserliness#吝啬
 peccadillo#小过失
+spoilsport#扫兴的人
 bountifully#丰盛地
 deplorably#令人痛心地
 imperturbably#镇定自若
@@ -17030,10 +17560,12 @@ toilsome#辛苦
 badinage#玩笑
 cynosure#焦点
 diminuendo#渐弱
+gregariousness#合群性
 kerfuffle#骚动
 tepidly#温吞吞地
 sadden#悲伤
 nonplused#不知所措
+overawed#敬畏
 garble#断章取义
 gloominess#沮丧
 insensibility#麻木
@@ -17099,12 +17631,14 @@ dishabille#便装
 irascibility#肝火
 tallness#身高
 tatter#破烂
+tenterhooks#拉钩
 paternally#父系
 sartorially#着装方面
 quadrilateral#四边形
 complacence#自满
 gabble#数落
 grandiloquence#豪言壮语
+imperviousness#不透水
 pyromaniac#纵火狂
 avow#承认
 irradiate#照射
@@ -17167,11 +17701,13 @@ phantasmal#幻影
 acrophobia#恐高症
 demagogy#哗众取宠
 inadmissibility#不予受理
+sultriness#闷热
 tangibility#有形性
 spirally#螺旋式
 pestilent#瘟疫
 blackball#黑球
 neoplatonism#新柏拉图主义
+obliqueness#倾斜度
 taxonomist#分类学家
 cadenza#华彩乐段
 monotheist#一神论者
@@ -17179,6 +17715,7 @@ sophist#诡辩家
 wainscot#护墙板
 parturition#分娩
 vocative#呼
+purposiveness#目的性
 sylph#精灵
 impermeability#不透水性
 propagator#传播器
@@ -17196,6 +17733,7 @@ excoriation#擦伤
 forfend#禁止
 orotund#圆润
 pushiness#咄咄逼人
+solicitousness#殷勤
 tawdriness#庸俗
 apathetically#冷漠地
 biennially#每两年一次
@@ -17259,6 +17797,7 @@ pepsin#胃蛋白酶
 archetypally#典型的
 testator#测试者
 pilferer#窃贼
+striate#条纹
 bootless#无靴
 feudalistic#封建主义
 platitudinous#老生常谈
@@ -17266,6 +17805,7 @@ sententious#有道理的
 acerbity#尖刻
 layabout#懒汉
 ribaldry#粗俗
+stagnancy#停滞
 tragedian#悲剧
 infernally#地狱般地
 polemically#激烈地
@@ -17291,6 +17831,7 @@ lionize#狮子化
 chasten#惩戒
 propitiatory#安抚
 drollery#笑话
+stolidity#沉稳
 obtrude#突兀
 hornlike#角状
 percipient#感知者
@@ -17304,9 +17845,12 @@ stratify#分层
 moated#护城河
 improvidence#即兴发挥
 maidenhood#少女时代
+selectiveness#选择性
 autobiographic#自传体的
+speleological#洞穴学
 babbler#喋喋不休者
 impracticability#不切实际
+storminess#暴风雨
 pinnace#小艇
 exiguous#稀少
 infelicitous#不吉利的
@@ -17314,16 +17858,22 @@ minatory#警告
 paranoiac#妄想症
 assuredness#自信
 chilliness#寒冷
+counteraction#反作用
+guilelessness#天真无邪
+heavy-handedness#粗暴
 imprecation#诅咒
 malapropism#用词不当
 obloquy#漫骂
 potshot#偷袭
+prickliness#刺痛
 sequela#后遗症
 apocalyptically#末日般的
+contentiously#激烈地
 irreconcilably#不可调和地
 lingeringly#久久地
 quixotically#异想天开地
 skimpily#吝啬地
+stingily#吝啬地
 tyrannically#专制地
 worthily#值得地
 gambol#嬉戏
@@ -17347,6 +17897,7 @@ sluggard#懒汉
 snigger#暗笑
 vainglory#虚荣
 voluptuary#享乐主义
+southwards#向南
 ignobly#卑鄙地
 trebly#三重奏
 vilely#卑鄙地
@@ -17362,6 +17913,7 @@ divisor#除数
 permissibly#允许地
 monadic#单子
 philatelic#集邮
+contagiousness#传染性
 euphony#谐音
 freewheel#飞轮
 internee#实习生
@@ -17405,6 +17957,7 @@ cavil#挑剔
 quaff#畅饮
 recompose#重组
 seclude#隔离
+disquieted#不安
 flowerless#无花
 archaism#古风
 bashfulness#臊
@@ -17466,6 +18019,7 @@ snuffle#哼哼
 undersold#低价出售
 unorthodoxy#非正统
 impedimenta#障碍
+viands#菜肴
 didactically#教学上
 gratingly#令人不快地
 heretically#异端
@@ -17504,8 +18058,10 @@ compendious#简明
 feebleminded#智力低下
 ferny#蕨类植物
 aeronaut#航空员
+conspicuousness#显眼
 hireling#雇工
 monomaniac#单恋
+stodginess#沉闷
 indent#缩进
 acidify#酸化
 allusiveness#暗示性
@@ -17538,10 +18094,12 @@ flaccidity#松弛
 flimsiness#脆弱
 gaudiness#华美
 jingoist#沙文主义者
+presumptuousness#狂妄自大
 rapscallion#恶棍
 regality#王权
 spelunker#洞穴探险者
 stipple#点描
+terseness#简洁
 wiliness#狡猾
 acrobatically#杂技般地
 desirably#理想情况下
@@ -17558,6 +18116,7 @@ enthuse#鼓起勇气
 expatiate#详述
 reprove#责备
 disproof#反证
+henpecked#妻管严
 peaky#尖峰
 researchable#可研究的
 foolery#愚蠢
@@ -17596,6 +18155,7 @@ countervail#抵销
 embitterment#怨恨
 assignable#可分配
 captious#吹毛求疵的
+dandified#精致的
 ill-natured#心怀恶意
 sedulous#勤奋的
 clamminess#湿冷
@@ -17604,6 +18164,7 @@ imperturbability#不扰动性
 impregnability#坚不可摧
 instate#州内
 jauntiness#轻快
+moroseness#忧郁
 plentitude#富足
 prestidigitation#魔术
 purloin#窃
@@ -17611,6 +18172,8 @@ showiness#炫耀
 somnambulist#梦游者
 superintendence#督察
 unflappability#沉着冷静
+vacuousness#空虚
+obsequies#葬礼
 westwards#向西
 antagonistically#敌对地
 autocratically#专制地
@@ -17641,6 +18204,7 @@ antiquary#古董商
 flatcar#平板车
 idolater#偶像崇拜者
 stenography#速记
+palings#栅栏
 deputize#代理
 desalinate#脱盐
 gestate#妊娠
@@ -17665,6 +18229,7 @@ blazon#纹章
 bungler#笨蛋
 inamorata#伊纳莫拉塔
 insurrectionist#叛乱分子
+judiciousness#明智
 lenience#宽容
 maceration#浸渍
 pugilism#拳击
@@ -17711,9 +18276,11 @@ recrudescent#复发的
 spadeful#满满
 terminable#可终止
 authoritativeness#权威
+demeanour#风度
 epistemologist#认识论者
 lordling#小贵族
 poltroon#懦夫
+temperately#温和地
 stylize#风格化
 necessitous#必需的
 vinegared#醋
@@ -17725,6 +18292,7 @@ technic#技术
 impenitent#不知悔改的
 percipience#感知力
 superannuation#退休金
+stridulation#鸣声
 barrelful#满桶
 comestible#可食用的
 involuted#内卷的
@@ -17750,7 +18318,11 @@ impulsion#冲动
 malingerer#装病者
 mistiness#雾气
 mugginess#闷热
+obnoxiousness#令人厌恶
 prolixity#罗唆
+sunniness#阳光明媚
+tactlessness#缺乏圆滑
+unscrupulousness#肆无忌惮
 unworldliness#超凡脱俗
 xenophobe#仇外者
 hygienically#卫生方面
@@ -17786,8 +18358,10 @@ maisonette#复式公寓
 parquetry#镶木地板
 scruffiness#邋遢
 shadiness#阴暗
+stultification#愚钝
 wittiness#机智
 gustily#阵风
+solitarily#孤独
 macerate#浸泡
 underexpose#曝光不足
 periphrastic#迂回
@@ -17824,6 +18398,7 @@ foresail#前帆
 handwrite#手写
 importune#进口
 ingratiation#讨好
+loquaciousness#健谈
 manacle#束缚
 perambulation#步行
 prevaricator#拖延者
@@ -17832,6 +18407,8 @@ sapience#智慧
 scantiness#稀少
 shamble#混乱
 sibylline#西比林
+simplemindedness#头脑简单
+skillfulness#熟练
 smatter#琐事
 streamlet#流子
 subvention#补贴
@@ -17877,6 +18454,7 @@ dissuasion#劝阻
 intension#意图
 irresolutely#犹豫不决
 parochially#教区
+sunnily#阳光明媚
 beatify#贝阿菲
 mainsheet#主表
 metempsychosis#轮回
@@ -17892,6 +18470,7 @@ elfish#精灵鱼
 jocose#滑稽的
 repayable#可偿还
 styptic#止血剂
+sylphlike#婷
 kinsfolk#亲属
 assiduity#勤奋
 bagatelle#小品
@@ -17991,6 +18570,7 @@ recitalist#独奏家
 renouncement#放弃
 resplendence#辉煌
 shuffler#洗牌机
+sogginess#湿漉漉的
 tastiness#美味
 vicissitude#变迁
 secateurs#修枝剪
@@ -18013,6 +18593,7 @@ temporize#拖延
 vitrify#玻璃化
 eatable#可食用
 fordable#可翻越的
+inferable#可推断的
 self-winding#自动上链
 showery#阵雨
 coarsen#粗化
@@ -18039,6 +18620,7 @@ facia#招牌
 inherence#固有
 pelf#不义之财
 pervasion#扩散
+speleologist#洞穴学家
 ventrally#腹侧
 hydrometer#比重计
 blithesome#快乐的
@@ -18048,10 +18630,12 @@ mealymouthed#含糊其辞
 rubbishy#垃圾
 sapless#无汁液的
 savoury#咸味的
+stouthearted#勇敢的
 tiltable#可倾斜
 unfledged#未成熟的
 unspotted#未发现的
 vixenish#狐狸精
+purlieus#普利厄斯
 adjuration#誓言
 anchorite#隐士
 benison#本尼森
@@ -18068,10 +18652,12 @@ frivolousness#轻浮
 frothiness#泡沫
 garrulity#喋喋不休
 grumbler#抱怨者
+impassiveness#冷漠
 indelibility#不可磨灭
 indicant#指标
 liberalist#自由主义者
 outskirt#郊区
+piousness#虔诚
 sinuosity#弯曲度
 sliminess#黏糊糊的
 snootiness#傲慢
@@ -18087,12 +18673,14 @@ faultily#错误地
 hearteningly#令人欣慰的是
 hectically#忙碌地
 inaptly#不恰当地
+inveterately#根深蒂固地
 laxly#松散地
 muzzily#模糊地
 objectionably#令人反感地
 practicably#实际上
 prodigally#挥霍无度
 satanically#撒旦式的
+stickily#粘着
 undesirably#不希望的
 abominate#鄙弃
 inexplicit#不显式
@@ -18118,6 +18706,7 @@ subjacent#底层
 tendinous#肌腱
 physiography#生理学
 pother#其他
+switchyard#调车场
 didactics#教学法
 diagrammatically#图解
 reprehensibly#应受谴责地
@@ -18150,6 +18739,7 @@ assignee#受让人
 beguilement#欺骗
 candidature#候选资格
 conspectus#概论
+corruptibility#腐败性
 dialectician#方言学家
 disembody#脱离肉身
 dispiritedness#沮丧
@@ -18162,13 +18752,16 @@ instalment#分期付款
 longueur#长
 mumbler#喃喃自语
 necrology#坏死学
+ornateness#华丽
 peculation#普库尔
 periphrasis#迂回表达
 persiflage#戏谑
 pithiness#简洁
 puerility#幼稚
 reprehension#非难
+sensibleness#见识
 serration#锯齿
+speciousness#似是而非
 swot#SWOT
 tangency#切
 venerability#尊贵
@@ -18184,6 +18777,9 @@ intangibly#无形
 limpidly#清澈地
 ploddingly#缓慢地
 pluckily#勇敢地
+soggily#湿漉漉地
+stuffily#闷闷不乐地
+sycophantically#谄媚地
 tastily#美味
 windily#刮风
 calcify#钙化
@@ -18248,6 +18844,7 @@ piscatorial#渔民
 raptorial#猛禽
 recriminatory#相互指责
 resistless#无力抵抗
+steepish#陡峭
 supererogatory#额外义务
 tumid#肿胀
 carousal#旋转木马
@@ -18268,6 +18865,7 @@ inanition#空洞
 inclemency#宽恕
 infelicity#不幸
 isobar#等压线
+lugubriousness#忧郁
 mollusc#软体动物
 perpendicularity#垂直度
 persistency#持久性
@@ -18275,10 +18873,12 @@ plaudit#喝采
 purlieu#普尔利厄
 scission#剪接
 skimpiness#吝啬
+suborder#亚目
 tabulator#制表器
 tessellation#镶嵌
 tipsiness#微醺
 tutorship#辅导
+uncharitableness#缺乏慈善精神
 disloyally#不忠地
 egoistically#自私地
 filthily#肮脏地
@@ -18315,6 +18915,7 @@ miry#溷
 partible#部分
 vincible#可战胜
 blench#漂白
+curability#可治愈性
 horology#钟表学
 penalization#惩罚
 villein#农奴
